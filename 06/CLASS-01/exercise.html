@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise - 01</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            padding-left: 15%;
+            padding-right: 15%;
+            background-color: #bfd0ae;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;            
+        }
+        header,main,nav,footer {
+            padding:  2%;
+            background-color: #faf6f6;       
+                 
+        }
+        header{
+            color: #5e5945;;
+        }
+
+        nav ul{            
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #5e5945;
+            width: 100%;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        nav li{
+            list-style-type: none;
+            display: flex;
+            width: 100%;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;  
+            width: 100%;
+            text-align: center;            
+            padding: 15%;
+
+        }
+        nav a:hover{
+            background-color: white;
+        }
+        
+        main{
+            display: flex;
+            color: #655c29;
+        }
+        section {
+
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+        }
+        main h4{
+            color: #5e5945;
+        }
+        main p{
+            padding-right: 5%;        
+        }
+     
+        .left-side li, .right-side li{
+            list-style-type: square;
+            font-size: 12px;
+
+        }
+        .left-side ul{
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 10%;
+        }
+        article{
+            border: 2px solid gray;
+            border-style: dotted;
+            padding-bottom: 5%;
+            margin-bottom: 5%;
+            /* display: flex;
+            flex-direction: column;
+            row-gap: 20px; */
+            
+        }
+        .right-side p, .left-side p{
+            font-size: 13px;
+        }
+
+        .right-side ul{
+            padding-left: 20%;
+
+        }
+        blockquote, p{
+            font-size: 12px;
+            line-height: 1.5;     
+              
+        }
+        .right-side blockquote,.right-side p,.right-side ul{
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        time{
+            font-size: 13px;
+            font-weight: bold;
+        }
+        footer{
+            text-align: center;
+            background-color: #5e5945;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>bloggers green</h1>
+        <h4>your news blog</h4>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="left-side">
+            <h4>welcome to green blog!</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis tempora, iste odio esse quam aut quas laboriosam minima cum. Quasi nulla rem culpa vel dolorem voluptatum praesentium tempore delectus distinctio odit, minus quod nobis. Minima a aspernatur ea harum? <a href="#">Lorem ipsum dolor sit.</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatum adipisci magnam quae obcaecati explicabo!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit molestiae exercitationem repellendus sequi perspiciatis, nihil quidem atque! Molestias magni quam voluptas adipisci suscipit modi dicta inventore repudiandae, distinctio provident aspernatur corrupti iste, quasi maxime, quod sunt quisquam recusandae a consequatur.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque illum, tempore animi magnam nesciunt cupiditate laborum blanditiis minus reprehenderit in iure adipisci dolor, officia hic perspiciatis, distinctio dolorem a. Voluptate veniam beatae libero cumque quis nisi dolorem, nobis quae.</p>
+            <ul>
+                <li><a href="#">Suspendisse quis gravida massa felis.</a></li>
+                <li><a href="#">Vivamus sagittis bibendum erat.</a></li>
+                <li><a href="#">Nullam et orci in erat viverra ornare.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                <li><a href="#">Lorem ipsum dolor sit amet consectetur.</a></li>
+                </ul>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque illum, tempore animi magnam nesciunt cupiditate laborum blanditiis minus reprehenderit in iure adipisci dolor, officia hic perspiciatis, distinctio dolorem a. Voluptate veniam beatae libero cumque quis nisi dolorem, nobis quae.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero itaque illum, tempore animi magnam nesciunt cupiditate laborum blanditiis minus reprehenderit in iure adipisci dolor, officia hic perspiciatis, distinctio dolorem a. Voluptate veniam beatae libero cumque quis nisi dolorem, nobis quae.</p>
+            
+        </section>
+        <section class="right-side">
+            <article>
+            <h4>lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, fuga? Sed, aliquam! <a href="#">More...</a></p>
+            <h4>ipsum dolorem</h4>
+                <ul>
+                    <li><a href="#">Sagittis magnam</a></li>
+                    <li><a href="#">Minus reprehender</a></li>
+                    <li><a href="#">Perspiciatis</a></li>
+                    <li><a href="#">Veniam beatae</a></li>
+                </ul>
+            </article>
+
+            <article>
+                <h4>recent updates</h4>
+                <blockquote><time datetime="2006-06-09">[06/09/2006]</time>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptas. <a href="#">More...</a></blockquote>
+                <blockquote><time datetime="2006-06-06">[06/06/2006]</time>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptas. <a href="#">More...</a></blockquote>
+                <blockquote><time datetime="2006-06-03">[06/03/2006]</time>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptas. <a href="#">More...</a></blockquote>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright Ⓒ 2026 company.com Designed by <a href="#">Green Bloger</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.h-pic{
+    border: 1px solid red;
+    height: 40vh;
+    background-image: url("/06/CLASS-03/img/1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h-video{
+    height: 40vh;
+    position: relative;
+}
+
+.h-video > div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(50,50,50,.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.h-video > video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}

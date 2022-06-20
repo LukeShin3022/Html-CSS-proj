@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 04</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="register">
+            <form method="post" action="thankyou.html">
+                <label for="fName">First Name:</label>
+                <input type="text" name="fName" placeholder="FirstName">
+                <label for="flame">last Name:</label>
+                <input type="text" name="lName"placeholder="LastName">
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="email">
+                <!-- <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="Female">FeMale</option>
+                    <option value="male">Male</option>
+                </select> -->
+                <select name="Baverage">
+                    <!-- <option value=""></option> -->
+                    <optgroup label="cold">
+                        <option value="juice">Juice</option>
+                        <option value="soda">soda</option>
+                        <option value="lemonade">Lemonade</option>
+                        <option>Ice Tea</option>
+                    </optgroup>
+                    <optgroup label="hot">
+                        <option>Hot Chocolate</option>
+                        <option value="tea">Tea</option>
+                        <option>Coffee</option>
+                        <option value="latte">Latte</option>
+                    </optgroup>
+                </select>
+                <article>
+                    <input type="checkbox" name="sugar" value="sugar">suger
+                    <input type="checkbox" name="milk" value="milk">milk
+                    <input type="checkbox" name="ice" value="cream">ice
+                    <input type="checkbox" name="cream" value="ice">cream                    
+                </article>
+                <article>
+                    <input type="radio" name="daytime" value="night"> Night
+                    <input type="radio" name="daytime" value="morning"> Morning
+                    <input type="radio" name="daytime" value="afternoon"> Afternoon
+                </article>
+                <article>
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" placeholder="Username">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" placeholder="Password">
+                </article>
+                <article>
+                    <input type="file" name="File">
+                    <input type="color" name="Color">
+                    <input type="number" name="Age" placeholder="age">
+                </article>
+                <article><input type="reset">clean</article>
+                <article>
+                    <input type="submit" value="Send Data">
+                </article>
+            </form>
+        </section>
+        <section class="gallery">
+            <details>
+                <summary>First row</summary>
+                <figure>
+                    <img src="./img/01.jpg" alt="pic-01">
+                    <figcaption>
+                        pic. 01
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/02.jpg" alt="pic-02">
+                    <figcaption>
+                        pic. 02
+                    </figcaption>
+                </figure>
+            </details>
+            <figure>
+                <img src="./img/03.jpg" alt="pic-03">
+                <figcaption>
+                    pic. 03
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./img/04.jpg" alt="pic-04">
+                <figcaption>
+                    pic. 04
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./img/05.jpg" alt="pic-05">
+                <figcaption>
+                    pic. 05
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+</body>
+</html>
