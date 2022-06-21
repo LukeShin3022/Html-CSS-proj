@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding-left: 20%;
+    padding-top: 10%;
+}
+
+td,th{
+    font-size: 28pt;
+    border: 2px solid black;
+
+}
+thead{
+    background-color: gray;
+}
+tbody{
+    background-color: blanchedalmond;
+}
+/* 짝수만 마우스 오버 */
+/* tbody > tr:nth-child(even):hover{ 
+    background-color: yellow;
+} */
+tbody > tr:hover{
+    background-color: yellow;
+
+}

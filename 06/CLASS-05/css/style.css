@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    background-image: url("/06/CLASS-05/img/image1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 40vh;
+}
+header > section{
+    background-color: rgba(50, 50, 50, .5);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+header article:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    /* border: 1px solid red; */
+}
+header article:nth-child(1) > h1{
+    font-family: cursive;
+    color: white;
+    font-size: 46px;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+header article:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    row-gap: 15px;
+
+}
+header article:nth-child(2) > h1{
+    color: white;
+    font-size: 36;
+    font-weight: 300;
+}
+header article:nth-child(2) > p{
+    color: white;
+    width: 40%;
+    text-align: center;
+}
+header article:nth-child(2) a{
+    text-decoration: none;
+}
+header form{
+    width: 30%;
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+}
+header span:nth-child(1){
+    color: lightblue;    
+}
+header button{
+    color: white;
+    padding: 2%;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid white;
+}
+header span:nth-child(2){
+    color: lightgreen;    
+}
+header button:nth-child(1){
+    background-color: green;
+}
+header button:nth-child(2){
+    background-color: red;
+}
+nav ul{
+    display: flex;
+    column-gap: 10px;
+    /* border: 1px solid red; */
+}
+nav li{
+    list-style-type: none;    
+    /* border: 1px solid red; */
+}
+nav a{
+    padding: 1rem;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    /* border: 1px solid red; */
+}
+nav a:hover{
+    background-color: rgba(50, 50, 50, .5);
+}
+    
+main{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15vh;
+}
+textarea{
+    width: 100%;
+    padding: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid gainsboro;
+
+}
+footer{
+    background-color: gainsboro;
+    text-align: center;
+    border-top: 3px solid lightgray;
+    padding: 3vh;
+}
+.services{
+    background-color: gainsboro;
+    padding: 3vh;
+    text-align: center;
+}
+.services > article{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+.services img{
+    border-radius: 50%;
+    border: 1px solid lightskyblue;
+    width: 5vh;
+    height: 5vh;
+    padding: 5%;
+}
+.services figure{
+    background-color: white;
+    width: 30%;
+    padding: 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+.services figcaption{
+    font-weight: 600;
+}
+.services p{
+    font-size: 14px;
+}
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+.portfolio > article{
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio figure{
+    padding: 1%;
+    width: 20%;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+.portfolio img{
+    height: 25vh;
+    width: 80%;
+}
+.portfolio figcaption{
+    width: 100%;
+    font-weight: 600;
+}
+.portfolio hr{
+    width: 40%;
+    border-color: gainsboro;
+}
+.portfolio > p{
+    width: 35%;
+    text-align: center;
+}
+.portfolio a{
+    text-decoration: none;
+    color: steelblue;
+}
+.portfolio a:hover{
+    text-decoration: underline;
+}
+.newstetter{
+    background-color: lightskyblue;
+    display: flex;
+    justify-items: center;
+    text-align: center;
+}
+.newstetter > article{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 5%;
+    color: white;
+}
+.newstetter h2{
+    text-transform: capitalize;
+}
+.newstetter [type="submit"]{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 2%;
+    font-size: 16px;
+    font-weight: 600;
+}
+.newstetter [type="email"]{
+    padding: 2%;
+    font-size: 16px;
+    width: 60%;
+    border: 0px none transparent;
+    background-color: rgb(187, 226, 251);
+    color: black;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+}
+.contact > h2{
+    font-size: 18px;
+    font-weight: 300;
+}
+.contact > form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    row-gap: 25px;
+}
+.contact input{
+    width: 25%;
+    padding: 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid gainsboro;
+
+}
+.contact [type="submit"]{
+    width: 100%;
+    background-color: lightskyblue;
+    color: white;
+    font-weight: 600;
+}
