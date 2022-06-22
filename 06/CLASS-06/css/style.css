@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: gainsboro;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* padding-left: 20%; */
+    /* padding-right: 20%; */
+}
+/* main{
+    border: 1px solid rebeccapurple;
+} */
+header{    
+    height: 35vh;    
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: 1px solid rebeccapurple;
+}
+main{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+header > section{
+    height: 98%;
+    width: 80%;
+    background-image: url("/06/CLASS-06/img/header.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;    
+    border: 3px solid gray;
+    border-radius: 1%;
+    /* height: 30vh;
+    width: 80vh; */
+}
+header aside{
+    width: 10vh;
+    height: 10vh;
+    background-image: url("/06/CLASS-06/img/storm.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+}
+header h1{
+    font-size: 40px;
+    color: royalblue;
+}
+header span{
+    color: whitesmoke;
+}
+nav{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 80%;
+    
+}
+nav li{
+    width: 100%; 
+    display: flex;    
+}
+nav a{
+    padding: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+    font-weight: 600;    
+}
+nav a:hover{
+    background-color: gray;
+    color: white;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+
+}
+a{
+    color: black;
+}
+footer{
+    background-color: #BBB;
+    /* color: white; */
+    border: 2px solid darkgray;
+    padding: 1%;
+    text-align: center;
+    font-size: 12px;
+}
+.magenta, .gold-header{
+    padding: 1%;
+    color: white;
+    font-size: 18px;
+    border-bottom: 5px solid white;
+}
+.magenta{
+    background-color: darkmagenta;
+}
+.gold-header{
+    background-color: goldenrod;
+}
+.left-side, .right-side{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.left-side > article{
+    border: 5px solid white;
+}
+.left-side article, .right-side article{
+    background-color: white;
+}
+.left-side section{
+    padding: 2%;
+}
+.left-side > article:nth-child(1) aside{
+    background-image: url("/06/CLASS-06/img/01.jpg");   
+}
+.left-side > article:nth-child(2) aside{   
+    background-image: url("/06/CLASS-06/img/02.jpg");   
+}
+.left-side aside{
+    padding: 1%;
+    float: left;
+    width: 15vh;
+    height: 15vh;
+    background-size: contain;
+    margin-right: 1%;
+}
+.left-side p{
+    padding-bottom: 2%;
+    text-align: justify;
+    font-size: 15px;
+}
+.left-side div, .left-side section{
+    background-color: #fafafa;    
+}
+.left-side div{
+    border-top: 5px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+.left-side a{
+    font-size: 12px;
+}
+.left-side div p{
+    font-size: 12px;
+}
+.right-side{
+    width: 55%;
+}
+.right-side article{
+    border: 5px solid white;
+}
+.right-side aside{
+    width: 125px;
+    height: 125px;
+    background-color: #BBB;
+    border: 2px solid #555;
+}
+.right-side > article:nth-child(1) section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    align-content: center;
+    justify-content: space-evenly;
+    row-gap: 20px;
+    background-color: #fafafa;
+    padding-top: 5%;
+    padding-bottom: 5%;    
+}
+.right-side ul{
+    padding: 20px;
+    background-color: #fafafa;
+}
+.right-side p{
+    font-size: 14px;
+    background-color: #fafafa;
+}

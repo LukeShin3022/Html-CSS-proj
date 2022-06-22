@@ -2,3 +2,29 @@
     padding: 0;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+header{
+    padding: 2%;
+    background-color: white;
+    border-bottom: 1px solid gray;
+}
+header > section{
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    width: 200px;
+    height: 60px;
+}
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    padding-left: 10%;
+}
