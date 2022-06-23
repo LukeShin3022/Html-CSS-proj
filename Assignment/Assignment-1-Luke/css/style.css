@@ -15,12 +15,13 @@ header{
 
     display: flex;
     justify-content: space-between;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 0.5%;
     background-color: white;
     border-bottom: 1px solid gray;
 }
-header > section{
+.header-sec{
     padding-top: 35px;
     display: flex;
     justify-content: space-between;
@@ -32,21 +33,27 @@ header img{
 }
 header input{
     width: 70px;
-}
-header button{
-    background-color: white;
-    border: 0px none;
-    font-size: 15px;
-    font-weight: 600;
-    padding-left: 5px;
-}
-header button:hover{
-    color: lightblue;
-    text-decoration: underline;
+    height: 20px;
 }
 header form{
     display: flex;
-    column-gap: 20px;
+    column-gap: 10px;
+}
+.header-sec form li{
+    display: flex;
+    flex-direction: column;
+    column-gap: 15px;
+    list-style-type: none;
+}
+.header-sec form a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+header form a:hover{
+    color: lightblue;
+    text-decoration: underline;
 }
 nav > ul{
     display: flex;
@@ -206,14 +213,6 @@ footer section{
     background-color: #f8f5f4;
     column-gap: 10px;
 }
-.foot-bottom a{
-    color: black;
-    text-decoration: none;
-}
-.foot-bottom a:hover{
-    color: #2950B8;
-    text-decoration: underline;
-}
 .foot-top{
     column-gap: 10%;
     padding: 5%;
@@ -225,4 +224,198 @@ footer section{
     padding-bottom: 5%;
     color: #2950B8;
     text-shadow: 1px 1px 2px #2950B8;
+}
+.foot-top li{
+    list-style-type: none;
+    text-align: center;
+}
+.foot-top a{
+    color: black;
+    text-decoration: none;
+}
+.foot-top a:hover{
+    color: #2950B8;
+    text-decoration: underline;
+}
+.foot-bottom a{
+    color: black;
+    text-decoration: none;
+}
+.foot-bottom a:hover{
+    color: #2950B8;
+    text-decoration: underline;
+}
+/* ############ Sign up page ################ */
+.header-sign{
+    border-bottom: none;
+    padding: 4%;
+    display: flex;
+    justify-content: center;
+}
+.header-sign img{
+    width: 45vh;
+    height: 12vh;
+}
+.main-sign form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+}
+.main-sign div{
+    display: flex;
+    flex-direction: column;
+}
+.main-sign input{
+    border: 2px solid #2950B8;
+    height: 3vh;
+    width: 500px;
+}
+.main-sign select{
+    border: 2px solid #2950B8;
+    height: 3vh;
+    width: 500px;
+    font-size: 20px;
+}
+.main-sign label{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    font-size: 20px;
+}
+.main-sign button{
+    background-color: #2950B8;
+    color: white;
+    height: 40px;
+    width: 500px;
+    border: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.main-sign button:hover{
+    background-color: white;
+    color: #2950B8;
+    border: 2px solid #2950B8;
+}
+/* ############ Contact page ################ */
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+    background-color: #f8f5f4;
+    row-gap: 30px;
+    padding-bottom: 5%;
+}
+.contact h1{
+    padding-top: 5%;
+    padding-bottom: 2%;
+    color: #2950B8;
+    text-shadow: 1px 1px 2px #2950B8;
+}
+.cont-addr{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;    
+}
+.cont-addr p{
+    font-size: 20px;
+}
+.cont-addr a{
+    text-decoration: none;
+    color: black;
+}
+.cont-addr a:hover{
+    color: skyblue;
+    text-decoration: underline;
+}
+.cont-question{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.cont-question h2{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    color: #2950B8;
+    text-shadow: 1px 1px 2px #2950B8;
+}
+.cont-question p{
+    font-size: 20px;
+}
+.cont-question a{
+    text-decoration: none;
+    color: black;
+}
+.cont-question a:hover{
+    color: skyblue;
+    text-decoration: underline;
+}
+.cont-info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    font-size: 20px;
+    color: black;
+}
+.cont-info div input{
+    border: 2px solid #2950B8;
+    height: 3vh;
+
+}
+.cont-info div:nth-child(1){
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: left;    
+    column-gap: 5px;
+}
+.cont-info div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.cont-info div:nth-child(2) select{
+    border: 2px solid #2950B8;
+    height: 3vh;
+    font-size: 20px;
+}
+.cont-info button{
+    background-color: #2950B8;
+    color: white;
+    height: 40px;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.cont-info button:hover{
+    background-color: white;
+    color: #2950B8;
+    border: 2px solid #2950B8;
+}
+/* ############ Login page ################ */
+
+.main-login div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+.main-login label{
+    font-size: 50px;
+    color: #2950B8;
+}
+.main-login button{
+    background-color: #2950B8;
+    color: white;
+    height: 40px;
+    width: 300px;
+    border: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.main-login button:hover{
+    background-color: white;
+    color: #2950B8;
+    border: 2px solid #2950B8;
 }
