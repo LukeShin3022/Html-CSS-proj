@@ -6,25 +6,223 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Times New Roman', Times, serif, Geneva, Tahoma, sans-serif;
 }
 header{
-    padding: 2%;
+
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
     background-color: white;
     border-bottom: 1px solid gray;
 }
 header > section{
+    padding-top: 35px;
     display: flex;
     justify-content: space-between;
+    column-gap: 45px;
 }
 header img{
     width: 200px;
-    height: 60px;
+    height: 55px;
+}
+header input{
+    width: 70px;
+}
+header button{
+    background-color: white;
+    border: 0px none;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 5px;
+}
+header button:hover{
+    color: lightblue;
+    text-decoration: underline;
+}
+header form{
+    display: flex;
+    column-gap: 20px;
 }
 nav > ul{
     display: flex;
     flex-direction: row;
     column-gap: 15px;
     padding-left: 10%;
+    list-style-type: none;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+nav a:hover{
+    color: lightblue;
+    text-decoration: underline;
+}
+main{
+    width: 100%;    
+}
+main h1{
+    font-size: 40px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+}
+footer section{
+    display: flex;
+    justify-content: center;
+}
+.top-side{
+    background-image: url("/Assignment/Assignment-1-Luke/img/travel.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30vh;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    color: white;
+    row-gap: 10px;
+}
+
+.top-side li{
+    display: flex;
+    list-style-type: none;
+    background-color: #2950B8;
+    border-radius: 7px;
+    width: 20vh;
+    text-align: center;
+}
+.top-side a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    padding: 3%;
+    /* border: 1px solid red; */
+}
+.top-side a:hover{
+    color: #2950B8;
+    background-color: white;
+    border-radius:6px;
+}
+.bottom-side{
+    display: flex;
+    justify-content: space-evenly;
+    height: 45vh;
+    border-bottom: 3px solid #f8f5f4;
+    border-right: 3px solid #f8f5f4;
+    /* border: 1px solid red; */
+}
+.bottom-side img{
+    width: 200px;
+    height: 130px;
+    border-radius: 15px;
+    box-shadow: 4px 3px 3px gray;
+}
+.bottom-side h2{
+    padding-top: 2%;
+    padding-bottom: 3%;
+    color: #2950B8;
+    text-shadow: 1px 1px 2px #2950B8;
+}
+.left-side, .right-side{
+    width: 50%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.left-side{
+    background-color: #f8f5f4;
+}
+.left-side section{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid green; */
+}
+.left-side ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;    
+}
+.left-side li{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #2950B8;
+    border: 0px solid #2950B8;
+    border-radius: 5px;
+    list-style-type: none;
+    text-align: center;   
+}
+.left-side a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    padding: 4%;
+    /* border: 1px solid red; */
+}
+.left-side a:hover{    
+    color: #2950B8;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+}
+.right-side section{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.right-side div{
+    display: flex;
+    padding-left: 3%;
+    padding-right: 1%;
+}
+.right-side p{
+    padding-left: 3%;
+    text-align: justify;
+}
+.right-side a{
+    text-decoration: none;
+    color: #2950B8;
+    font-size: 18px;
+    font-weight: 600;
+}
+.right-side a:hover{
+    color: skyblue;
+    text-decoration: underline;
+}
+.foot-bottom{
+    padding: 2%;
+    background-color: #f8f5f4;
+    column-gap: 10px;
+}
+.foot-bottom a{
+    color: black;
+    text-decoration: none;
+}
+.foot-bottom a:hover{
+    color: #2950B8;
+    text-decoration: underline;
+}
+.foot-top{
+    column-gap: 10%;
+    padding: 5%;
+}
+.foot-top h2{
+    /* border: 1px solid red; */
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    color: #2950B8;
+    text-shadow: 1px 1px 2px #2950B8;
 }
