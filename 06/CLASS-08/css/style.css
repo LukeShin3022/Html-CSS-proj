@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    /* border: 1px solid red; */
+    background-color: rgb(255, 196, 0);
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: flex-end;
+}
+header > section{
+    /* border: 1px solid blue; */
+    background-image: linear-gradient(gainsboro,white);
+    height: 94%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 19%;
+    padding-right: 19%;
+    color: gray;
+
+}
+header h1{
+    font-size: 26px;
+    padding-bottom: 4%;
+}
+header article:nth-child(1){
+    width: 40%;
+}
+header article:nth-child(2){
+    width: 40%;
+    display: flex;
+    justify-content: right;
+}
+header form{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+header input{
+    color: gray;
+    padding: 2%;
+    border: 1px solid lightgray;
+
+}
+header[type="search"]{
+    background-color: white;
+}
+header [type="submit"]{
+    background-color: whitesmoke;
+}
+header [type="submit"]:hover{
+    background-color: lightgray;
+    color: white;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+    border-top: 2px solid lightgoldenrodyellow;
+    border-bottom: 2px solid lightgoldenrodyellow;
+}
+nav > ul{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+nav li{
+    display: flex;
+    width: 100%;    
+}
+nav a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: firebrick;
+    padding: 6%;
+    font-weight: 600;
+}
+nav a:hover{
+    color: white;
+    background-color: firebrick;
+}
+main{
+    width: 62%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    column-gap: 20px;
+}
+hr{
+    width: 61.9%;
+    border: 1px solid gainsboro;
+}
+footer{
+    width: 60%;
+    background-image: linear-gradient(gainsboro, white);
+    padding: 1%;
+    text-align: center;
+}
+h2{
+    font-size: 18px;
+}
+aside{
+    border: 1px solid red;
+    float: left;
+    width: 15vh;
+    height: 15vh;
+    background-size: cover;
+    background-position: center;
+    margin-right: 3%;
+}
+p{    
+    font-size: 12px;   
+}
+img{
+    padding: 1%;
+    width: 10vh;
+    height: 10vh;
+}
+figure{
+    width: fit-content;
+}
+.left h2{
+    color: slategray;
+    padding: 2%;
+    background-image: linear-gradient(gainsboro, white);
+}
+.left, .left > article{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.left p{
+    padding: 0% 2% 2% 0%;
+    font-size: 14px;
+    line-height: 2;
+    text-align: justify
+}
+.left > article:nth-child(1) aside{
+    background-image: url("../img/01.jpg");
+    background-color: red;
+
+}
+.left > article:nth-child(2) aside{
+    background-image: url("../img/02.jpg");
+}
+.left div{
+    color: orange;
+    font-size: 12px;
+}
+.left a{
+    color: orange;
+    text-decoration: none;
+}
+.middle{
+    width: 70%;
+}
+.middle,
+.right{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;    
+}
+.middle > article, 
+.right article{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid darkgray;
+}
+.middle > article{
+    padding: 5%;
+    row-gap: 20px;
+}
+.middle h2,
+.right h2{
+    color: orange;
+    text-decoration: underline;
+}
+.middle p{
+    line-height: 2;
+    text-decoration: underline;
+}
+.middle a{
+    color: black;
+    font-size: 15px;
+}
+.right > article{
+    padding: 1% 5%;
+}
+.right > article:nth-child(1){
+    font-size: 14px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+}
+.right > .gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 5px;
+}
+.gallery > h2,
+.right article:nth-child(3) > h2{
+    width: 100%;
+    padding-bottom: 3%;
+}
+.right article:nth-child(3){
+    padding-bottom: 5%;
+}
+.right aside{
+    border: 2px solid gray;
+    background-color: lightgray;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: slategray;
+    font-size: 14px;
+}

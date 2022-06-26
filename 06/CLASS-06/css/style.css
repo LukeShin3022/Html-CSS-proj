@@ -5,36 +5,37 @@
 body{
     background-color: gainsboro;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* padding-left: 20%; */
-    /* padding-right: 20%; */
+    /* padding-left: 1 8%; */
+    /* padding-right: 18%; */
 }
 /* main{
     border: 1px solid rebeccapurple;
 } */
+header,main,footer {
+    padding-left: 20%;
+    padding-right: 20%;
+}
 header{    
     height: 35vh;    
     display: flex;
     justify-content: center; 
-    align-items: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border: 1px solid rebeccapurple;
-}
-main{
-    padding-left: 10%;
-    padding-right: 10%;
+    /* align-items: center; */
+    /* padding-top: 2%;
+    padding-bottom: 2%; */
+    /* border: 1px solid rebeccapurple; */
 }
 header > section{
-    height: 98%;
-    width: 80%;
+    height: 90%;
+    width: 100%;
     background-image: url("/06/CLASS-06/img/header.jpg");
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    align-items: center;    
+    align-items: center;  
+    row-gap: 10px;  
     border: 3px solid gray;
-    border-radius: 1%;
+    border-radius: 5px;
     /* height: 30vh;
     width: 80vh; */
 }
@@ -44,7 +45,6 @@ header aside{
     background-image: url("/06/CLASS-06/img/storm.png");
     background-size: contain;
     background-repeat: no-repeat;
-    display: flex;
 }
 header h1{
     font-size: 40px;
@@ -62,7 +62,7 @@ nav ul{
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    width: 80%;
+    width: 55%;
     
 }
 nav li{
@@ -86,11 +86,9 @@ nav a:hover{
 main{
     display: flex;
     justify-content: space-between;
-    column-gap: 50px;
-
-}
-a{
-    color: black;
+    column-gap: 30px;
+    padding-top: 2%;
+    padding-bottom: 5%;
 }
 footer{
     background-color: #BBB;
@@ -99,6 +97,9 @@ footer{
     padding: 1%;
     text-align: center;
     font-size: 12px;
+}
+a{
+    color: black;
 }
 .magenta, .gold-header{
     padding: 1%;
@@ -112,25 +113,33 @@ footer{
 .gold-header{
     background-color: goldenrod;
 }
-.left-side, .right-side{
+.left-side,
+.right-side{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
 }
-.left-side > article{
-    border: 5px solid white;
-}
-.left-side article, .right-side article{
+.left-side > article,
+.right-side > article{
+    padding: 5px;
     background-color: white;
 }
-.left-side section{
-    padding: 2%;
-}
+.left-side > article:nth-child(1),
+.right-side > article:nth-child(1){
+    display: flex;
+    flex-direction: column;
+} 
+.right-side > article:nth-child(1){
+    justify-content: center;
+} 
 .left-side > article:nth-child(1) aside{
     background-image: url("/06/CLASS-06/img/01.jpg");   
 }
 .left-side > article:nth-child(2) aside{   
     background-image: url("/06/CLASS-06/img/02.jpg");   
+}
+.left-side section{
+    padding: 1%;
 }
 .left-side aside{
     padding: 1%;
@@ -161,10 +170,7 @@ footer{
     font-size: 12px;
 }
 .right-side{
-    width: 55%;
-}
-.right-side article{
-    border: 5px solid white;
+    width: 99%;
 }
 .right-side aside{
     width: 125px;
@@ -180,14 +186,16 @@ footer{
     justify-content: space-evenly;
     row-gap: 20px;
     background-color: #fafafa;
-    padding-top: 5%;
-    padding-bottom: 5%;    
+    padding: 10%  
 }
 .right-side ul{
-    padding: 20px;
+    padding-left: 2rem;
     background-color: #fafafa;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 .right-side p{
     font-size: 14px;
+    padding: 1% 5% 20% 5%;
     background-color: #fafafa;
 }
