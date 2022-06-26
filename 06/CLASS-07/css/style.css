@@ -117,10 +117,11 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     row-gap: 30px;
 }
 .contact h1{
+    padding-top: 3%;
     padding-bottom: 2%;
 }
 .cont-addr{
@@ -140,6 +141,73 @@ footer{
     text-decoration: underline;
 }
 .cont-question{
+    padding: 5% 7% 3% 7%;
     display: flex;
     flex-direction: column;
+    row-gap: 30px;
+    font-size: 20px;
+    background-color: rgb(240, 236, 236);
+}
+.cont-question section:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.cont-question section:nth-child(2) form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.cont-info > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+}
+.cont-info > div:nth-child(2) label{
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+.cont-info input,
+.cont-info select {
+    padding-bottom: 1%;
+}
+
+/* Gallery start */
+
+.main-gallery{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 80vh;
+}
+.sec-gallery{
+    width: 100%;
+    height: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: center;
+}
+.sec-gallery img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.sec-gallery article{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.sec-gallery div{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.sec-gallery h2{
+    color: white;
+    font-size: 50px;
+}
+.foot-gallery{
+    padding-top: 5%;
 }
