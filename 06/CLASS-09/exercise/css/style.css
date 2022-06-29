@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Times New Roman', Times, serif
+}
+header, nav, main, footer{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+header{
+    height: 15vh;
+    background-color: #e3f1f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header h1{
+    color: #095d7b;
+    font-size: 30px;
+    padding-bottom: 5%;
+}
+header p{
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+}
+header > section:nth-child(2){
+    padding: 1%;
+    display: flex;
+    text-align: left;
+    row-gap: 5px;
+    height: 40%;
+    width: 30%;
+    background-color: #add6ed;
+    /* border: 1px solid red; */
+}
+header > section:nth-child(2) input{
+    padding: 1%;
+    width: 37%;
+}
+header > section:nth-child(2) button{
+    background-color: #479dc6;
+    font-size: 15px;
+    color: white;
+    padding: 0.8%;
+    width: 18%;
+    border: 1px solid #095d7b
+}
