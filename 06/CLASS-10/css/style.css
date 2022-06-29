@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bodyBgColor: rgb(81, 161, 230);
+    --middleBgColor: rgb(57, 136, 203);
+    --rightBgColor: rgb(16,85,144);
+    --headerBgColor: rgb(14,63,106);
+    --navBgColor: rgb(35,110,175);
+    /* --footerBgColor: rgb(80, 45, 68); */
+    --footerBgColor: rgb(14,63,106);
+
+
+}
+/* RGB 81,161,230 */
+body{
+    background-color: var(--bodyBgColor);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+header{
+    height: 20vh;
+    display: flex;
+    align-items: flex-end;
+}
+header h1{
+    font-size: 35px;
+}
+header > section{
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--headerBgColor);
+    width: 100%;
+    height: 15vh;
+}
+header > section, nav, main, footer{
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+main > section{
+    padding-bottom: 5%;
+}
+nav{
+    background-color: var(--navBgColor);
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+nav > ul{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+nav li{
+    display: flex;
+    align-items: center;
+}
+nav a{
+    /* width: 100%; */
+    padding-top: 10%;
+    padding-bottom: 10%;
+    color: floralwhite;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: 2px underline dotted white;
+}
+footer{
+    background-color: var(--footerBgColor);
+    flex-direction: column;
+    min-height: 45vh;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > section:last-child{
+    padding-top: 3%;
+    font-size: 14px;
+}
+footer > section:last-child a{
+    color: floralwhite;
+}
+footer p{
+    line-height: 1.5;
+    font-size: 14px;
+}
+form{
+    padding: 1%;
+    width: 100%;
+    position: relative;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 15px;
+}
+input, textarea{
+    padding: 1%;
+    width: 100%;
+}
+textarea{
+    height: 20vh;
+    font-size: 20px;
+}
+[type="submit"]{
+    width: fit-content;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    padding-right: 2%;
+    padding-top: 5%;
+    width: 60%;
+}
+.middle, .right{
+    width: 20%;
+    padding: 2%;
+    padding-top: 5%;
+}
+.left section{
+    padding-top: 5%;
+}
+.left h2{
+    border-bottom: 1px dotted white;
+    padding-bottom: 1%;
+    font-size: 30px;
+    font-weight: 300;
+}
+.left aside{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid white;
+    width: 25vh;
+    height: 15vh;
+}
+.left p{
+    line-height: 1.5;
+    font-size: 14px;
+    text-align: justify;
+
+}
+.top aside{
+    float: left;
+    background-image: url("../img/island.jpg");
+    margin-right: 15px;
+}
+.bottom aside{
+    float: right;
+    background-image: url("../img/velley.jpg");
+    margin-left: 15px;
+}
+.bottom ol{
+    padding-bottom: 5%;
+    padding-left: 25%;
+    line-height: 2;
+    font-size: 14px;
+}
+.bottom a{
+    color: white;
+    text-decoration: none;
+    padding: 2%;
+    background-color: midnightblue;
+    font-size: 14px;
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: var(--middleBgColor);
+}
+.middle h2,
+.right h2{
+    border-bottom: 2px dotted floralwhite;
+    padding-bottom: 1%;
+}
+.middle ul{
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    list-style-type: none;
+}
+.middle a{
+    text-decoration: none;
+    color: floralwhite;
+    font-size: 14px;
+}
+.right{
+    background-color: var(--rightBgColor);
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+.right > article:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.right p{
+    font-size: 14px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
+.right a{
+    color: floralwhite;
+}
+.footer-top{
+    display: flex;
+    column-gap: 40px;
+}
+.footer-top a{
+    color: floralwhite;
+}
+.footer-top > article{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.footer-top > article:last-child{
+    width: 55%;
+}
+.footer-top a{
+    text-decoration: none;
+    color: floralwhite;
+    font-size: 14px;
+}
+.footer-top a:hover{
+    text-decoration: underline;
+}
