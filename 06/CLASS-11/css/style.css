@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --mainColor: #F17327;
+
+}
+
+body{
+    background-color: ivory;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: var(--mainColor);
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid saddlebrown;
+
+}
+
+header > article{
+    background-image: url("../img/berry.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* box-shadow: inset 0 0 100px var(--mainColor); */
+    background: linear-gradient();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 53%;
+}
+
+header h1{
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    background-color: rgba(241, 115, 39, .6);
+
+}
+
+nav{
+    display: flex;
+    background-color: saddlebrown;
+    justify-content: center;
+    border-top: 3px solid var(--mainColor);
+}
+
+nav > ul{
+    /* border: 1px solid white; */
+    display: flex;
+    width: 52%;
+    /* padding-top: 2px;
+    padding-bottom: 2px; */
+}
+nav li{
+    padding: 2px;
+    display: flex;
+    width: 100%;
+    border-right: 1px solid white;
+}
+nav a{
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 5%;
+}
+
+nav a:hover{
+    background-color: var(--mainColor);
+    color: black;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+main > section{
+    padding: 2% 5% 2% 2%;
+}
+
+h2{
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: saddlebrown;
+    padding-bottom: 5%;
+}
+
+h2 > span{
+    color: #F17327;
+}
+
+blockquote {
+    padding-left: 10%;
+}
+
+blockquote > p{
+    font-weight: 600;
+    color: darkgoldenrod;
+    line-height: 1.5;
+    font-size: 20px;
+    font-style: italic;
+}
+
+figure{
+    background-image: url("../img/bg-tomato.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* display: flex; */
+    width: 20vh;
+    height: 20vh;
+    padding: 1%;
+    border: 5px solid beige;
+    outline: 1px solid darkgray;
+}
+
+img{
+    /* visibility: hidden; */
+    display: none;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-color: darkgray;
+    row-gap: 5px;
+    padding: 2%;
+}
+
+legend{
+    width: fit-content;
+    color: orangered;
+}
+
+label{
+    width: 100%;
+}
+
+p{
+    font-size: 14px;
+    color: dimgray;
+    line-height: 1.5;
+}
+
+footer{
+    padding: 1%;
+    background-color: var(--mainColor);
+    border-top: 5px solid saddlebrown;
+}
+
+footer span,
+footer > p{
+    color: black;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+
+}
+
+[type=submit]{
+    width: fit-content;
+}
+
+
+.left, .right{
+    width: 15%;
+}
+.middle{
+    width: 50%;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    border-left: 2px dashed var(--mainColor);
+    border-right: 2px dashed var(--mainColor);
+}
+
+.left{
+    padding-left: 5%;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.left > ul{
+    padding-left: 3%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    color: saddlebrown;
+}
+
+.left li{
+    padding-left: 5%;
+    list-style-type: square;
+}
+.left a{
+    text-decoration: none;
+    color: saddlebrown;
+}
+.left a:hover{
+    text-decoration: underline;
+}
+.mid-top > figure{
+    float: right;
+}
+.mid-top > p{
+    padding-top: 3%;
+}
+.mid-top a{
+    color: steelblue;
+    text-decoration: none;
+}
+.mid-top a:hover{
+    text-decoration: underline;
+}
+
+.mid-bottom > figure{
+    float: left;
+    margin-right: 20px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.right > ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-left: 20%;
+}
+
+.right li{
+    list-style-type: disc;
+}
+
+.right a{
+    text-decoration: none;
+    color: steelblue;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    /* border: 1px solid red; */
+
+}
+
+.row > form{
+    width: 18%;
+    /* padding-right: 5%; */
+}
