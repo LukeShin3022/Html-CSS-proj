@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgb(27, 27, 27);
+}
+
+header, main, nav, footer{
+    background-color: white;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 15%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+h1{
+    color: white;
+    font-size: 40px;
+}
+
+nav ul{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li{
+    display: flex;
+    width: 100%;
+}
+
+nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(0, 45, 90);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav a:hover{
+    background-color: rgb(0, 45, 90);
+    color: white;
+}
+
+.h-banner{
+    position: relative;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.h-banner section{
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 25;
+    position: absolute;
+}
+.h-banner p{
+    font-size: 18px;
+    color: white;
+}
+
+.h-banner input{
+    font-size: 18px;
+    padding: 2%;
+    background-color: rgb(244,243,242);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px lightgray;
+}
+.h-banner input:hover
+{
+    color: white;
+    background-color: rgb(0, 45, 90);
+    box-shadow: 2px 2px 5px rgb(0, 70, 140);
+}
+
+.m-top{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/main-top.jpg");
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.m-top h2{
+    color: white;
+    font-size: 40px;
+    padding-bottom: 5%;
+}
+.m-top > article{
+    
+    width: 70%;
+    height: 50%;
+    display: flex;
+
+    column-gap: 30px;
+}
+
+.m-top figure{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    border: 3px solid white;
+    background-color: rgb(244,243,242);
+}
+
+.m-top img{
+    /* border: 1px solid red; */
+    object-fit: cover;
+    object-position: center;
+    width: 120px;
+    height: 120px;
+}
+
+.m-top a{
+    padding: 5%;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(0, 45, 90);
+    text-decoration: none;
+}
+
+.m-top a:hover{
+    color: gray;
+    text-decoration: underline;
+}
+
+.m-bottom{
+    background-image: url("../img/main-bot.jpg");
+    padding-left: 10%;
+    padding-right: 10%;
+}

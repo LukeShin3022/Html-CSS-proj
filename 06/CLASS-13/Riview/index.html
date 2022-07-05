@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <video src="./video/oceanvideo.mp4" autoplay muted loop></video>
+        <article>
+            <img src="./img/storm.png" alt="logo">
+            <h1>
+                This is our review website
+            </h1>
+        </article>
+    </header>
+    <main>
+        <section class="left">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            #Item
+                        </th>
+                        <th>
+                            Concert Artist
+                        </th>
+                        <th>
+                            price
+                        </th>
+                        <th>
+                            discount
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- <tr> tag can bo child from
+                            <table>, <thead>, <tbody>, and <tfoot> -->
+                        <td>
+                            #1
+                        </td>
+                        <td>
+                            Cirque du Soleil
+                        </td>
+                        <td>
+                            $112.00
+                        </td>
+                        <td>
+                            5%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            #2
+                        </td>
+                        <td>
+                            Coldplay
+                        </td>
+                        <td>
+                            $180.00
+                        </td>
+                        <td>
+                            10%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            #3
+                        </td>
+                        <td>
+                            Red Hot chilli Peppers
+                        </td>
+                        <td>
+                            $200.00
+                        </td>
+                        <td>
+                            25%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            #4
+                        </td>
+                        <td>
+                            BTS
+                        </td>
+                        <td>
+                            $200.00
+                        </td>
+                        <td>
+                            5%
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            Total:
+                        </td>
+                        <td colspan="3">
+                            4
+                        </td>
+                    </tr>
+                </tfoot>
+                <caption>
+                    Concert Ticket
+                </caption>
+            </table>
+        </section>
+        <section class="right">
+            <form>
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <article>
+                        <input type="text" name="fName" placeholder="First Name">
+                        <input type="text" name="lName" placeholder="Last Name">
+                        <select>
+                            <option selected disabled>Gender</option>
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                            <option value="">Other</option>
+                            <option value="">Prefer not to say</option>
+                        </select>
+                    </article>
+                    <article>
+                        <input type="email" name="email" placeholder="Email">
+                        <select>
+                            <option selected disabled>Age</option>
+                            <optgroup label="Adults">
+                                <option>18-24~</option>
+                                <option>25~31</option>
+                                <option>32~38</option>
+                                <option>39~45</option>
+                            </optgroup>
+                            <optgroup label="Seniors">
+                                <option>46~52</option>
+                                <option>53~59</option>
+                                <option>60~66</option>
+                                <option>67+</option>
+                            </optgroup>
+                        </select>
+                     
+                    </article>
+                </fieldset>
+                <fieldset>
+                    <legend>Ticket Info</legend>
+                    <article class="t-info">
+                        <input type="date" name="Showdate">
+                        <input type="time" name="Showtime">
+                        <input type="number" name="total" placeholder="Total Ticket">
+                        <input type="number" name="Price" placeholder="Unit price">
+                    </article>
+                    <article class="rating">
+                        <table>
+                            <tr>
+                                <td>
+                                    1 - Not satisfacted
+                                </td>
+                                <td>
+                                    2 - Some what satisfacted
+                                </td>
+                                <td>
+                                    3 - Satisfacted
+                                </td>
+                                <td>
+                                    4 - Good
+                                </td>
+                                <td>
+                                    5 - Remarkable
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="rate"></td>
+                                <td><input type="radio" name="rate"></td>
+                                <td><input type="radio" name="rate"></td>
+                                <td><input type="radio" name="rate"></td>
+                                <td><input type="radio" name="rate"></td>
+                            </tr>
+                        </table>
+                        <textarea name="comment" placeholder="Comments"></textarea>
+                    </article>
+                </fieldset>
+                <article>
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Clear">
+                </article>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
