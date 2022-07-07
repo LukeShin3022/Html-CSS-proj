@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+header, nav, main,
+footer > section{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: firebrick;
+    color: white;
+    height: 5vh;
+}
+
+nav{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 34px;
+    text-transform: capitalize;
+}
+
+figcaption{
+    padding: 1%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+}
+
+figcaption a{
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: firebrick;
+}
+
+form{
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+
+}
+
+nav h3{
+    padding-top: 5%;
+    border-top: 2px solid white;
+    text-transform: uppercase;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+nav li{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: dimgray;
+}
+
+nav a:hover > h3{
+    border-top: 2px solid firebrick;
+    color: firebrick;
+}
+
+nav p{
+    color: dimgray;
+    text-transform: capitalize;
+}
+
+form > aside{
+    display: flex;
+    justify-content: space-between;
+}
+
+[type=email], [type=submit]{
+    background-color: white;
+    border: 1px solid gainsboro;
+    padding: 2%;
+}
+
+[type=email]{
+    width: 80%;
+}
+
+
+.services{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    padding-bottom: 5%;
+    border-bottom: 2px solid lightgray;
+}
+
+.services img{
+    width: 224px;
+    height: 310px;
+    border: 3px solid white;
+    outline: 1px solid gainsboro;
+}
+
+.about{
+    display: flex;
+    column-gap: 50px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.about h2{
+    color: dimgray;
+    border-bottom: 1px dashed dimgray;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.about a{
+    color: firebrick;
+    text-decoration: none;
+}
+
+.about a:hover{
+    text-decoration: underline;
+}
+
+.about h4{
+    color: dimgray;
+}
+
+.about > article:first-child {
+    width: 90%;
+}
+
+.about > article:first-child > section{
+    padding-top: 3%;
+}
+
+.about > article:first-child aside{
+    /* element positioning */
+    margin-right: 15px;
+    width: 15vh;
+    height: 15vh;
+    float: left;
+    /* element color and border */
+    background-color: rgb(40, 40, 40);
+    color: whitesmoke;
+    outline: 1px solid darkgray;
+    border: 1px solid white;
+    /* content positioning */
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about > article:first-child p{
+    padding-top: 1%;
+    color: gray;
+}
+
+/* .about > article:last-child {
+
+} */
+
+.about > article:last-child section{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-bottom: 1px dashed darkgray;
+}
+
+.about > article:last-child aside{
+    float: left;
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(40, 40, 40);
+    border: 3px solid white;
+    outline: 1px solid darkgray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: whitesmoke;
+}
+
+.about > article:last-child a{
+    font-weight: 500;
+}
+
+.about > article:last-child p{
+    color: gray;
+}
+
+.about > article:last-child p:last-child{
+    
+    color: gray;
+    display: flex;
+    justify-content: right;
+}
+
+
+
+.top{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+}
+
+.top > article{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.top h2{
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    color: darkgray;
+    border-bottom: 1px dashed darkgray;
+}
+
+
+.top > article:first-child > h2{
+    text-transform: capitalize;
+}
+
+.top a{
+    font-size: 14px;
+    text-decoration: none;
+    color: firebrick;
+}
+
+
+.top a:hover{
+    text-decoration: underline;
+}
+
+.top > article li{
+    display: flex;
+}
+
+.bottom{
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    background-color: rgb(40, 40, 40);
+}

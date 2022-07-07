@@ -54,6 +54,8 @@ nav{
     border-top: 3px solid var(--mainColor);
 }
 
+
+
 nav > ul{
     /* border: 1px solid white; */
     display: flex;
