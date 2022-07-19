@@ -11,14 +11,14 @@
 <body>
     <header>
         <nav>
-            <img src="./img/Logo-hr.png" alt="Logo">
+            <img id="grow" src="./img/Logo-hr.png" alt="Logo">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#edu">Education</a></li>
-                <li><a href="#language">Language</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a id="grow" href="#about">About</a></li>
+                <li><a id="grow" href="#project">Project</a></li>
+                <li><a id="grow" href="#work">Work</a></li>
+                <li><a id="grow" href="#edu">Education</a></li>
+                <li><a id="grow" href="#language">Language</a></li>
+                <li><a id="grow" href="#contact">Contact</a></li>
             </ul>
             <details>
                 <summary class="fa-solid fa-bars"></summary>
@@ -39,11 +39,11 @@
             <span>
                 Software Developer
             </span>
-            <aside>
-                <a target="_blank" href="https://www.facebook.com" class="fa-brands fa-facebook-f"></a>
-                <a target="_blank" href="https://github.com/LukeShin3022/Tamwood_Co-op" class="fa-brands fa-git"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/luke-shin-53180a243" class="fa-brands fa-linkedin-in"></a>
-                <a target="_blank" href="https://www.instagram.com" class="fa-brands fa-instagram"></a>
+            <aside class="ani-slide">
+                <a id="grow" target="_blank" href="https://www.facebook.com" class="fa-brands fa-facebook-f" ></a>
+                <a id="grow" target="_blank" href="https://github.com/LukeShin3022/Tamwood_Co-op" class="fa-brands fa-git"></a>
+                <a id="grow" target="_blank" href="https://www.linkedin.com/in/luke-shin-53180a243" class="fa-brands fa-linkedin-in"></a>
+                <a id="grow" target="_blank" href="https://www.instagram.com" class="fa-brands fa-instagram"></a>
             </aside>
         </article>
     </header>
@@ -54,19 +54,21 @@
                 <figure>
                     <img src="./img/me.jpg" alt="Me">
                 </figure>
-                <h3>
-                    [This is me, the prepared web developer]
-                </h3>
-                <p>
-                    I have experience in researching the de-identification of personal information in corporate research institutes of information security solution companies with web firewalls and personal information protection solutions.
-                </p>
-                <p>
-                    In addition, I has experience in consulting such as consulting on establishing an information protection management system, diagnosing web vulnerabilities, and secure coding consulting.
-                    I Have knowledge of web services and networks.
-                </p>
-                <p>
-                    Separately, I got a bachelor's degree in computer science and a master's degree in computer science.
-                </p>
+                <section>
+                    <h3>
+                        [This is me, the prepared web developer]
+                    </h3>
+                    <p>
+                        I have experience in researching the de-identification of personal information in corporate research institutes of information security solution companies with web firewalls and personal information protection solutions.
+                    </p>
+                    <p>
+                        In addition, I has experience in consulting such as consulting on establishing an information protection management system, diagnosing web vulnerabilities, and secure coding consulting.
+                        I Have knowledge of web services and networks.
+                    </p>
+                    <p>
+                        Separately, I got a bachelor's degree in computer science and a master's degree in computer science.
+                    </p>
+                </section>
             </article>
         </section>
         <section class="project" id="project">
@@ -104,7 +106,7 @@
                         information Security Consultant
                     </h3>
                     <p>
-                        ddasfsdafsdafsadfsadfddas
+                        Information Strategy Planning Consulting, Web Vulnerability diagnosis, Penetration Testing, Secure Coding Consulting
                     </p>
                 </aside>
                 <aside>
@@ -113,7 +115,7 @@
                         Researcher
                     </h3>
                     <p>
-                        ddasfsdafsdafsadfsadfddas
+                        Participate in the project to develop methods for de-identification in Big Data
                     </p>
                 </aside>
         </section>
@@ -139,44 +141,46 @@
         </section>
         <section class="language" id="language">
             <h2>Language</h2>
-            <aside>
-                <h3>English</h3>
-                <div class="eng">
-                    <ul>
-                        <li>
-                            <p>Speaking</p>
-                        </li>
-                        <li>
-                            <p>Listening</p>
-                        </li>
-                        <li>
-                            <p>Reading</p>
-                        </li>
-                        <li>
-                            <p>Writing</p>
-                        </li>
-                    </ul>
-                </div>
-            </aside>
-            <aside>
-                <h3>Korean</h3>
-                <div class="kor">
-                    <ul>
-                        <li>
-                            <p>Speaking</p>
-                        </li>
-                        <li>
-                            <p>Listening</p>
-                        </li>
-                        <li>
-                            <p>Reading</p>
-                        </li>
-                        <li>
-                            <p>Writing</p>
-                        </li>
-                    </ul>
-                </div>
-            </aside>
+            <article>
+                <aside>
+                    <h3>English</h3>
+                    <div class="eng">
+                        <ul>
+                            <li>
+                                <p>Speaking</p>
+                            </li>
+                            <li>
+                                <p>Listening</p>
+                            </li>
+                            <li>
+                                <p>Reading</p>
+                            </li>
+                            <li>
+                                <p>Writing</p>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <aside>
+                    <h3>Korean</h3>
+                    <div class="kor">
+                        <ul>
+                            <li>
+                                <p>Speaking</p>
+                            </li>
+                            <li>
+                                <p>Listening</p>
+                            </li>
+                            <li>
+                                <p>Reading</p>
+                            </li>
+                            <li>
+                                <p>Writing</p>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </article>
         </section>
         <section class="contact" id="contact">
             <h2>Contact</h2>
@@ -184,13 +188,13 @@
                 <input type="email" placeholder="Email">
                 <input type="text" placeholder="Subject">
                 <textarea placeholder="Enter Message..."></textarea>
-                <input type="submit" value="Send message">
+                <input type="submit" value="Send message" id="send-bt">
             </form>
         </section>
     </main>
     <footer>
         <figure>
-            <img src="./img/Logo-vt.png" alt="Logo">
+            <img id="grow" src="./img/Logo-vt.png" alt="Logo">
             <figcaption>
                 <small>
                     &copy; All rights reserved. Luke
@@ -198,10 +202,10 @@
             </figcaption>
         </figure>
         <aside>
-            <a target="_blank" href="https://www.facebook.com" class="fa-brands fa-facebook-f"></a>
-            <a target="_blank" href="https://github.com/LukeShin3022/Tamwood_Co-op" class="fa-brands fa-git"></a>
-            <a target="_blank" href="https://www.linkedin.com/feed/" class="fa-brands fa-linkedin-in"></a>
-            <a target="_blank" href="https://www.facebook.com" class="fa-brands fa-instagram"></a>
+            <a id="grow" target="_blank" href="https://www.facebook.com" class="fa-brands fa-facebook-f"></a>
+            <a id="grow" target="_blank" href="https://github.com/LukeShin3022/Tamwood_Co-op" class="fa-brands fa-git"></a>
+            <a id="grow" target="_blank" href="https://www.linkedin.com/feed/" class="fa-brands fa-linkedin-in"></a>
+            <a id="grow" target="_blank" href="https://www.facebook.com" class="fa-brands fa-instagram"></a>
         </aside>
     </footer>
 </body>
