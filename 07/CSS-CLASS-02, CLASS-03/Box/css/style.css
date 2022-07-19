@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    /* animation: slide 4s ease-in-out infinite alternate; */
+}
+
+.box{
+    width: 30vh;
+    padding: 10%;
+    color: whitesmoke;
+    background-color: rgb(80, 80, 80);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    animation: slide 3s linear;
+
+}
+
+.circle{
+    width: 30vh;
+    height: 30vh;
+    background-color: bisque;
+    border-radius: 50%;
+    border-right: 3px solid crimson;
+    display: flex;
+    justify-content: center;
+
+    animation: clock 10s ease-in-out infinite;
+    /* animation: clock 10s ease-out infinite; */
+}
+
+
+@keyframes slide{
+    from{
+        transform: translateX(-100%);
+    }
+
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes clock{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+
+}

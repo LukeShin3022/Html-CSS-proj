@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* MOBLILE WEBSITE */
+@media (min-width: 280px){
+
+    body{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+}
+    nav{
+        background-color: royalblue;
+        display: flex;
+        justify-content: center;
+        height: 30vh;
+        align-items: center;
+    }
+
+    nav > ul{
+        display: none;
+    }
+
+    img{
+        width: 25vh;
+        height: 25vh;
+        border-radius: 50%;
+    }
+
+    header{
+        background-image: url("../img/header.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 36px;
+        text-transform: uppercase;
+    }
+
+    h2{
+        text-transform: uppercase;
+        color: teal;
+        border-bottom: 2px solid teal;
+        font-size: 36px;
+        padding-bottom: 5%;
+    }
+
+    aside{
+        background-image: url("../img/css.PNG");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30vh;
+        height: 30vh;
+    }
+
+    table{
+        width: 80%;
+        border-top: 3px solid teal;
+        border-bottom: 3px solid teal;
+    }
+
+    form{
+        width: 90%;
+    }
+
+    form article{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    form > fieldset{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    form > fieldset > legend{
+        color: teal;
+        border-bottom: 3px solid teal;
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    form > fieldset:last-child > div{
+        display: flex;
+        column-gap: 10px;
+    }
+
+    fieldset{
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    input{
+        width: 30vh;
+    }
+
+    select{
+        width: 20vh;
+    }
+
+    tfoot td{
+        text-align: right;
+    }
+    
+    td, th{
+        text-align: center;
+        padding: 2% 1%;
+    }
+
+    caption{
+        text-transform: uppercase;
+        font-size: 30px;
+        padding-bottom: 5%;
+    }
+
+
+
+    header > article{
+        color: whitesmoke;
+        background-color: rgba(80, 80, 80, .5);
+        padding: 10%;
+        text-align: center;
+    }
+
+    header p{
+        text-transform: capitalize;
+        font-size: 18px;
+    }
+
+    .contents{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    
+    }
+
+    .contents > article{
+        padding: 10%;
+    }
+
+    .contents p{
+        padding-top: 5%;
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    .skills{
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .skills > section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    [type="submit"]{
+        width: 50%;
+    }
+
+    [type="reset"]{
+        width: 50%;
+    }
+
+    details{
+        width: 50%;
+    }
+
+    details > ul{
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+    
+    summary{
+        font-size: 20px;
+        
+    }
+
+}
+

@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main{
+    width: 85%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+}
+
+header > article{
+    width: fit-content;
+    padding: 5%;
+    color: whitesmoke;
+    background-color: rgba(80, 80, 80, .5);
+}
+
+header p{
+
+    text-transform: capitalize;
+}
+
+nav{
+    width: 15%;
+    background-color: royalblue;
+    /* height: 1000vh; */
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+h1{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    color: teal;
+    border-bottom: 3px solid teal;
+}
+
+aside{
+    background-image: url("../img/css.PNG");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 10vh;
+    height: 10vh;
+}
+
+table{  
+    border: 1px solid royalblue;
+    width: 40%;
+}
+
+caption{
+    text-transform: uppercase;
+    font-size: 36px;
+    padding-bottom: 1%;
+}
+
+tfoot td{
+    text-align: right;
+
+}
+
+td{
+    text-align: center;
+    padding: 1%;
+}
+
+form{
+    width: 70%;
+}
+
+form > fieldset:first-child > legend{
+    color: teal;
+    font-size: 36px;
+    font-weight: 600;
+    border-bottom: 3px solid teal;
+    text-transform: uppercase;
+}
+
+
+fieldset{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 18px;
+}
+
+legend{
+    padding: 1%;
+}
+
+input, select{
+    padding: 1%;
+}
+
+select, [type="submit"], [type="reset"]{
+    width: 20vh;
+}
+
+[for="age"]{
+    padding-top: 5%;
+}
+
+img{
+    width: 100%;
+}
+
+nav > ul{
+    padding: 10%;
+}
+
+nav li{
+    display: flex;
+    width: 100%;
+}
+
+li > a{
+    width: 100%;
+    padding: 5%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+li a:hover{
+    background-color: skyblue;
+}
+
+
+
+
+main > section{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding: 5%;
+}
+
+
+.contents > article{
+    padding: 1%;
+    
+}
+
+.contents p{
+    padding: 1%;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills > section{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.skills p{
+    width: 80%;
+}

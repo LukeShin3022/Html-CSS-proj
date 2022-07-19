@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./models.html">Models</a></li>
+                <li><a href="./contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+        <article class="ct-banner">
+            <figure></figure>           
+            <section>
+                <div>
+                    <h1>Contact US</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repudiandae, aliquid hic reiciendis nesciunt illo.
+                    </p>
+                </div>
+                <p>
+                    OPERATING Time: 24/7 (<time>10:30</time> to <time>17:30</time>)
+                </p>
+            </section>
+        </article>
+    </header>
+    <main class="ct-main">
+        <h1>Contact US</h1>
+        <article>
+            <form action="./index.html" method="get" class="ct-info">
+                <fieldset class="ci-top">
+                    <legend>Contact Info</legend>
+                    <div>
+                        <label for="sbj">Contact Subject:</label>
+                        <select name="sbj" id="ct-sbj">
+                            <option value="SUBJECT" selected disabled>SUBJECT</option>
+                            <optgroup label="BUY">
+                                <option value="sbj1-1">Buy Car</option>
+                                <option value="sbj1-2">Check Stock</option>
+                            </optgroup>
+                            <optgroup label="SERVICES">
+                                <option value="sbj2-1">Refund</option>
+                                <option value="sbj2-2">Complaint</option>
+                                <option value="sbj2-3">Complaint</option>
+                            </optgroup>
+                            <optgroup label="ACCOUNT">
+                                <option value="sbj3-1">Forgot Password</option>
+                                <option value="sbj3-2">Sign Out</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="fname" id="name" placeholder="First Name">
+                        <input type="text" name="lname" id="name" placeholder="Last Name">
+                    </div>
+                    <div>
+                        <label for="gender">Gender</label>
+                        <select name="sbj" id="gender">
+                            <option value="GENDER" selected disabled>GENDER</option>
+                            <option value="gender-1">Male</option>
+                            <option value="gender-2">Female</option>
+                            <option value="gender-3">Others</option>
+                        </select>
+                        <label for="email">Email Adress</label>
+                        <input type="email" name="email" id="email" placeholder="Enter Email Address">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter Phone Number">
+                     </div>
+                </fieldset>
+                <fieldset class="ci-middle">
+                    <legend>Visit Info</legend>
+                    <div>
+                        <label for="visitdate">Date</label>
+                        <input type="date" name="Visitdate" id="visitdate">
+                    </div>
+                    <div>
+                        <label for="Visittime">Time</label>
+                        <input type="time" name="Visittime">
+                    </div>
+                    <div>
+                        <label for="people">Number of Visitor</label>
+                        <input type="number" name="people" placeholder="Number of Visitor">
+                    </div>
+                </fieldset>
+                <fieldset class="ci-bottom">
+                    <legend>Which Type Do You Like</legend>
+                    <table id="ci-table">
+                        <tr>
+                            <td>
+                                [ Sedan ]
+                            </td>
+                            <td>
+                                [ SUV ]
+                            </td>
+                            <td>
+                                [ Wagon ]
+                            </td>
+                            <td>
+                                [ Truck ]
+                            </td>
+                            <td>
+                                [ Hatch ]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" name="rate"></td>
+                            <td><input type="radio" name="rate"></td>
+                            <td><input type="radio" name="rate"></td>
+                            <td><input type="radio" name="rate"></td>
+                            <td><input type="radio" name="rate"></td>
+                        </tr>
+                    </table>
+                    
+                </fieldset>
+                <div>
+                    <label for="cmt">Any Comments</label>
+                    <textarea name="cmt" id="cmt" placeholder="Enter Any Comments"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="SUBMIT">
+                    <input type="reset" value="RESET">
+                </div>
+            </form>
+        </article>
+    </main>
+    <footer class="ct-footer">
+        Copyright &copy; 2077
+        <a href="./index.html">
+            Luke Motors
+        </a>
+    </footer>
+</body>
+</html>

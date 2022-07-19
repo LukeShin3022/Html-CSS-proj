@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/style-mine.css">
+</head>
+<body>
+    <main>
+        <article class="left"> 
+            <section class="l-top">
+                <figure>
+                    <img src="./img/profile.jpg" alt="profile">
+                </figure>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./contact.html" target="_blank">contact</a></li>
+                </ul>
+            </nav>
+        </article>
+        <article class="co-right">
+            <header>
+                <section>
+                    <h1>home page</h1>
+                    <span>final exam home page</span>
+                </section>
+            </header>
+            <section>
+                <article class="co-main">
+                    <h2>user list</h2>
+                    <section class="userlist">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#User ID</th>
+                                    <th>First</th>
+                                    <th>Last</th>
+                                    <th>Tag</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Jacob</td>
+                                    <td>Tharnton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Total Users:</td>
+                                    <td colspan="3"> 3</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </section>
+                    <form>
+                        <fieldset class="co-form">
+                            <legend class="l-head">contact form</legend>
+                            <fieldset class="p-data">
+                                <legend>Personal Data</legend>
+                                <div>
+                                    <label for="name">Title, First and Last name:</label>
+                                    <div>
+                                        <select>
+                                            <option value="title" disabled selected>Title</option>
+                                            <option value="Ms"></option>
+                                            <option value="Mss"></option>
+                                            <option value="Mrs"></option>
+                                            <option value="Mr"></option>
+                                        </select>
+                                        <input type="text" placeholder="First" id="name">
+                                        <input type="text" placeholder="Last" id="name">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="age">Age*</label>
+                                    <select name="" id=""></select>
+                                </div>
+                            </fieldset>
+                            <fieldset class="addr">
+                                <legend>Address:</legend>
+                                <label for="address">Street, City, Postal Code:</label>
+                                <div>
+                                    <input type="text" placeholder="Street" id="address">
+                                    <input type="text" placeholder="City" id="address">
+                                    <input type="text" placeholder="Postal Code" id="address">
+                                </div>
+                            </fieldset>
+                            <fieldset class="cont">
+                                <legend>Contact:</legend>
+                                <label for="co-info">Email, Phone, and Fax:</label>
+                                <div>
+                                    <input type="email" placeholder="Street" id="co-info">
+                                    <input type="tel" placeholder="City" id="co-info">
+                                    <input type="tel" placeholder="Postal Code" id="co-info">
+                                </div>
+                            </fieldset>
+                            <div>
+                                <input type="submit" value="Send">
+                                <input type="reset" value="Reset">
+                            </div>
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+        </article>
+    </main>
+</body>
+</html>

@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;800&family=Rubik:wght@300;400;500;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --defaultColor : #65CD00;
+    --hoveredColor : #478F00;
+}
+
+html{
+    /* font-weight: 100; */
+    font-family: 'Heebo', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+/*  */
+@media (min-width: 300px){
+
+    header,
+    main > section,
+    footer{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    header{
+        padding-top: 3%;
+        background-color: var(--defaultColor);
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    header > article:first-child{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: whitesmoke;
+        min-height: fit-content;
+    }
+
+    header > article:last-child{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        color: whitesmoke;
+    }
+
+    header p{
+        font-size: 14px;
+    }
+
+    nav > ul{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        justify-content: right;
+        width: 50%;
+    }
+
+    details{
+        text-align: right;
+        width: 100%;
+        position: relative;
+    }
+    
+    details > ul{
+        width: 100%;
+        position: absolute;
+    }
+
+    details li{
+        display: flex;
+        background-color: rgba(68, 157, 0, .6);
+        width: 100%;
+        border-bottom: 1px solid whitesmoke;
+    }
+
+    details a{
+        width: 100%;
+        padding: 1%;
+        text-decoration: none;
+        color: whitesmoke;
+        text-align: right;
+    }
+
+    summary{
+        width: fit-content;
+        font-size: 30px;
+        border: 1px solid whitesmoke;
+        padding: 5%;
+        background-color: var(--hoveredColor);
+    }
+
+    h1{
+        text-transform: capitalize;
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 20px;
+        text-transform: capitalize;
+        color: dimgray;
+    }
+
+    h6{
+        width: 10vh;
+        border-bottom: 4px solid var(--defaultColor);
+    }
+
+    main{
+        padding-top: 10%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+    }
+
+    footer{
+        display:  flex;
+        height: 10vh;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5px;
+    }
+
+    footer > a{
+        text-decoration: none;
+        font-size: 28px;
+        color: gray;
+    }
+    
+    main > section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main > section > article:first-child{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        row-gap: 10px;
+        align-items: center;
+        padding-bottom: 15%;
+
+    }
+
+    .features > article:last-child{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 35px;
+        text-align: center;
+    }
+
+    .features aside{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .features i{
+        font-size: 26px;
+        color: var(--defaultColor);
+    }
+
+    .laptop{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        background-color: whitesmoke;
+    }
+
+    /* .laptop figure{
+        padding-bottom: 10%;
+    } */
+
+    .laptop img{
+        width: 100%;
+    }
+
+    .laptop > article{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .laptop > article > section{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* column-gap: 20px; */
+    }
+
+    .laptop aside{
+        background-color: var(--defaultColor);
+        border-radius: 50%;
+        padding: 5%;
+        color: whitesmoke;
+    }
+
+    .laptop div{
+        width: 75%;
+        font-size: 14px;
+    }
+
+    .services > article:last-child{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .services aside:nth-child(odd){
+        background-color: whitesmoke;
+    }
+
+    .services aside{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        row-gap: 20px;
+        font-size: 14px;
+        padding: 5%;
+        padding-top: 10%;
+
+    }
+
+    .services i{
+        font-size: 30px;
+    }
+
+    .action{
+        background-image: url("../img/chart.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 0;
+        color: whitesmoke;
+    }
+
+    .action h2:first-child{
+        color: whitesmoke;
+        padding: 5%;
+    }
+
+    .action p,
+    .action > article:first-child{
+        padding: 10%;
+        row-gap: 0;
+        width: 90%;
+        background-color: rgba(80, 80, 80, .5);
+    }
+    .action p{
+        text-align: center;
+    }
+
+    .about article:last-child{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .about figure{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about img{
+        width: 55%;
+        padding: 10%;
+    }
+
+    .contact > section{
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 40px;
+    }
+
+    .contact form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .contact div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact input, .contact textarea{
+        font-family: 'Heebo', sans-serif;
+        padding: 3%;
+    }
+
+    .contact textarea{
+        resize: none;
+        height: 25vh;
+    }
+
+    .contact > section > article:last-child{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        font-size: 14px;
+    }
+
+    .contact h4{
+        padding: 5%;
+    }
+
+    .contact ul{
+        line-height: 2;
+    }
+
+    .contact li{
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    .contact a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .contact p{
+        text-align: justify;
+    }
+
+    .contact [class^="fa-"]{
+        color: var(--defaultColor);
+    }
+    /* [class^=""] Starts with */
+    /* [class*=""] Contains... */
+    /* [class$=""] Ends with... */
+
+    address{
+        font-size: 14px;
+    }
+
+    label{
+        font-weight: 500;
+    }
+
+
+    .testimonial{
+        background-color: var(--defaultColor);
+        padding: 5% 15% 5% 15%;
+    }
+
+    .testimonial h2{
+        color: whitesmoke;
+    }
+
+    .testimonial h6{
+        border: 2px solid whitesmoke;
+    }
+
+    .testimonial p{
+        color: whitesmoke;
+        text-align: center;
+    }
+
+    [value="SEND"]{
+        width: 50%;
+        background-color: var(--defaultColor);
+        color: whitesmoke;
+        font-weight: 600;
+        border: 3px solid var(--defaultColor);
+        letter-spacing: 2px;
+    }
+
+    
+}
+
+@media (min-width: 700px){
+
+    header{
+        height: 30vh;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+    h4{
+        font-size: 24px;
+    }
+
+    input, textarea{
+        padding: 15%;
+        font-size: 18px;
+    }
+
+    summary{
+        padding: 5%;
+    }
+
+    header article:last-child{
+        padding-bottom: 10%;
+    }
+
+    header h3{
+        font-size: 32px;
+    }
+
+    nav{
+        width: 30%;
+    }
+
+    nav a{
+        font-size: 25px;
+    }
+
+    nav a:hover{
+        background-color: #65CD00;
+    }
+
+    .features > article:last-child{
+        flex-direction: row;
+        column-gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .laptop figure{
+        padding-bottom: 5%;
+    }
+
+    .features aside{
+        width: 40%;
+    }
+
+    .features i{
+        font-size: 36px;
+    }
+
+    .laptop aside{
+        padding: 4%;
+    }
+
+    .laptop i{
+        font-size: 30px;
+    }
+
+    .laptop h4{
+        font-size: 20px;
+    }
+
+    .services h4{
+        font-size: 20px;
+    }
+
+    .services i{
+        font-size: 36px;
+    }
+    
+    .services p,
+    .laptop p,
+    .action P,
+    .about p{
+        font-size: 20px;
+    }
+
+    .contact > section > article:last-child, address{
+        font-size: 20px;
+    }
+
+    .contact label{
+        font-size: 18px;
+    }
+
+    [value="SEND"]:hover{
+        width: 50%;
+        transition: .4s;
+        background-color: var(--hoveredColor);
+    }
+
+    .testimonial{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        font-size: 20px;
+    }
+
+}
+
+@media(min-width:1000px){
+    header{
+        height: 45vh;
+    }
+
+    header > article{
+        align-items: center;
+    }
+
+    header p{
+        width: 60%;
+    }
+
+    main{
+        padding-top: 5%;
+    }
+
+    details{
+        display: none;
+    }
+
+    nav{
+        width: 70%;
+        display: flex;
+    }
+
+    nav > ul{
+        display: flex;
+        width: 100%;
+
+    }
+
+    nav li{
+        display: flex;
+        width: 100%;
+    }
+
+    nav a{
+        border: 1px solid var(--defaultColor);
+        padding: 2%;
+        text-decoration: none;
+        color: whitesmoke;
+        text-align: center;
+        font-size: 18px;
+        width: 100%;
+        transition: .4s;
+    }
+
+    nav a:hover{
+        border-radius: 5px;
+        background-color: var(--hoveredColor);
+        border-color: whitesmoke
+    }
+
+    .features > article:last-child{
+        flex-wrap: nowrap;
+    }
+
+    main > section > article:first-child{
+        padding-bottom: 10%;
+    }
+
+    .laptop{
+        flex-direction: row;
+        column-gap: 50px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .laptop > article > section{
+        column-gap: 20px;
+        justify-content: unset;
+
+    }
+    
+    .laptop p{
+        font-size: 16px;
+    }
+
+    
+    .services aside{
+        width: 20%;
+        padding: 5%;
+    }
+
+    .action h2:first-child{
+        padding: 1%;
+    }
+    .action p, .action > article:first-child{
+        width: 70%;
+        padding: 3%;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+
+    
+    .about{
+        padding-bottom: 5%;
+    }
+
+    .about figure{
+        display: flex;
+        row-gap: 40px;
+    }
+
+    .about > article:last-child{
+        flex-direction: row;
+    }
+
+    .about img{
+        padding: 0;
+    }
+}

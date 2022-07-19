@@ -1,0 +1,11 @@
+.about ul li div:last-child{
+    height: 10px;
+    background-color: gray;
+}
+
+.about ul li div:last-child p{
+    height: 10px;
+    width: 50%;
+    background-color: orange;
+    border: 1px solid red;
+}

@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    background-color: firebrick;
+    width: 60vh;
+    height: 60vh;
+    border-radius: 50%;
+    transform-origin: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle{
+    background-color: indianred;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    /* position: absolute; */
+}
+
+.container:hover{
+    /* animation: grow 4s ease infinite alternate; */
+    /* animation-name: grow;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+}
+
+.circle:first-child{
+    background-color: black;
+}
+
+.circle:hover{
+    animation: pulse 5s ease-in-out infinite alternate;
+}
+
+.circle:last-child{
+    background-color: black;
+}
+
+@keyframes grow{
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(2);
+    }
+}
+
+@keyframes pulse{
+    0%{
+        background-color: indianred;
+    }
+
+    25%{
+        background-color: chocolate;
+    }
+
+    50%{
+        background-color: tomato;
+    }
+
+    75%{
+        background-color: brown;
+    }
+
+    100%{
+        background-color: red;
+    }
+}
