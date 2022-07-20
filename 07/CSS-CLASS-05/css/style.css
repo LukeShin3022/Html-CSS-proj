@@ -182,6 +182,15 @@ body{
 
     }
 
+    main > section:last-child{
+        color: whitesmoke;
+        background-color: #333;
+    }
+
+    progress{
+        display: none;
+    }
+
     img {
         width: 100%;
     }
@@ -272,9 +281,7 @@ body{
         justify-content: space-between;
     }
 
-    progress{
-        display: none;
-    }
+
 
     .about aside{
         flex-direction: column;
@@ -309,11 +316,8 @@ body{
         width: 90%;
     }
 
- 
-
     .about > article:last-child{
         row-gap: 50px;
-
     }
 
     .about > article:last-child > section{
@@ -329,5 +333,130 @@ body{
     .portfolio > article:last-child{
         row-gap: 5px;
     }
+
+    .contact{
+        row-gap: 15vh;
+    }
+
+    .contact h2{
+        color: whitesmoke;
+        font-size: 20px;
+    }
+
+    .contact h3{
+        text-transform: capitalize;
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    .contact > article:last-child{
+        display: flex;
+        row-gap: 20px;
+    }
+
+    .contact section{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+    }
+
+    .contact ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+    }
+
+    .contact li{
+        display: flex;
+        column-gap: 3vh;
+        align-items: center;
+    }
+    .contact i,
+    .contact a{
+        text-decoration: none;
+        color: var(--defaultOrange);
+    }
+
+    .contact i{
+        font-size: 20px;
+    }
+
+    address{
+        font-style: normal;
+        font-size: 14px;
+    }
+
+    [href^="tel"]{
+        color: whitesmoke !important;
+    }
+
+    [class*="clipboard"]{   
+        
+        color: whitesmoke !important;
+        /* position: absolute; */
+    }
+
+    /* [name="name"]{
+        width: 100%;
+    } */
+    
+    [value="Send Message"]{
+        color: whitesmoke;
+        text-transform: uppercase;
+        width: 45%;
+        padding: 5%;
+    }
+    
+    /* [name="email"]{
+        width: 100%;
+    } */
+
+    form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+    }
+
+    form > div{
+        display: flex;
+        flex-direction: column;
+        column-gap: 5px;
+        row-gap: 3vh;
+    }
+
+    .icon-bg > input{
+        width: 100%;
+    }
+
+    .icon-bg{
+        display: flex;
+        position: relative;
+        justify-content: right;
+    }
+
+    .icon-bg i{
+        padding-right: 2%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+
+    .contact input, textarea{
+        background-color: #444;
+        padding: 2%;
+    }
+
+    textarea{
+        font-family: 'Raleway', sans-serif;
+        resize: none;
+        height: 15vh;
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+        border-right: 2px solid gray;
+        border-bottom: 2px solid gray;
+    }
+
 }
 
