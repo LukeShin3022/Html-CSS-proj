@@ -557,8 +557,11 @@ body{
             }
 
             .about > article > figure{
+                width: 50%;
                 display: flex;
                 align-items: center;
+                justify-content: center;
+                /* border: 1px solid red; */
             }
 
             .about > article img{
@@ -568,6 +571,11 @@ body{
             .project > article{
                 flex-direction: row;
                 column-gap: 30px;
+            }
+
+            .project img{
+                width: 100%;
+                height: 80%;
             }
 
             .edu > article{

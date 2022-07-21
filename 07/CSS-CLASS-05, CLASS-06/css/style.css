@@ -187,6 +187,40 @@ body{
         background-color: #333;
     }
 
+    footer{
+        background-color: #202020;
+        border-top: 0.5px solid dimgray;
+        color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5vh;
+        padding: 10%;       
+    }
+
+    footer > article{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer a{
+        width: 5vh;
+        height: 5vh;
+        border: 1px solid whitesmoke;
+        border-radius: 50%;
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    footer p{
+        font-size: 14px;
+        font-weight: 200;
+    }
+
     progress{
         display: none;
     }
@@ -326,6 +360,38 @@ body{
         row-gap: 15px;
     }
 
+    .team > article:last-child{
+        row-gap: 15vh;
+    }
+
+    .team figure{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+    }
+
+    .team figcaption{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        text-transform: uppercase;
+    }
+
+    .team h4{
+        color: var(--defaultOrange);
+        font-size: 26px;
+        text-transform: uppercase;
+        background-color: white;
+        padding: 3%;
+    }
+
+    .team small{
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+
     .portfolio{
         row-gap: 10vh;
     }
@@ -458,5 +524,9 @@ body{
         border-bottom: 2px solid gray;
     }
 
+}
+
+@media (min-width: 700px){
+    
 }
 
