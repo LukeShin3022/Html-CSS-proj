@@ -526,6 +526,7 @@ body{
 
     @media (min-width: 700px){
 
+<<<<<<< HEAD
         nav{
             flex-direction: column;
             align-items: flex-end;
@@ -627,6 +628,12 @@ body{
         }
     }
 
+=======
+@media (min-width: 700px){
+    header{
+        
+    }
+>>>>>>> 1322b5c618be71e7234e5f3a6070850378d3455a
 }
 
 
