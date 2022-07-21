@@ -524,11 +524,153 @@ body{
         border-bottom: 2px solid gray;
     }
 
+    @media (min-width: 700px){
+
+        nav{
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        nav > h2{
+            width: 100%;
+        }
+
+        nav details{
+            display: none;
+        }
+
+        nav ul{
+            width: 90%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            column-gap: 1vh;
+
+        }
+
+        nav li{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        nav a:hover{
+            background-color: var(--defaultOrange);
+            color: whitesmoke;
+        
+        }
+
+        header{
+            height: 40vh;
+        }
+
+        header h1{
+            font-size: 28px;
+        }
+
+        header h2{
+            padding-bottom: 5%;
+            font-size: 24px;
+
+        }
+
+        header a{
+            width: 20%;
+            height: fit-content;
+        }
+
+        footer > article{
+            display: flex;
+            justify-content: center;
+            column-gap: 30px;
+        }
+
+        .features > article:last-child{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        .features section{
+            width: 45%;
+        }
+
+        /* ABOUT */
+
+        .about > article:last-child{
+            width: 100%;
+            column-gap: 3vh;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .about > article:last-child section{
+            width: 100%;
+        }   
+
+        .bars{
+
+            width: 100%;
+        }
+
+        .team > article:last-child{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 40px;
+
+        }
+
+        .team figure{
+            width: 45%;
+        }
+
+        .team h4{
+            font-size: 24px;
+        }
+
+        .team small{
+            font-size: 18px;
+        }
+
+        .portfolio > article:last-child{
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 1vh;
+            justify-content: center;
+        }
+
+        .portfolio figure{
+            width: 45%;
+        }
+
+        .contact > article:last-child{
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .contact section:last-child{
+            width: 50%;
+        }
+
+    }
+
 }
 
-@media (min-width: 700px){
-    header{
-        
-    }
-}
 
