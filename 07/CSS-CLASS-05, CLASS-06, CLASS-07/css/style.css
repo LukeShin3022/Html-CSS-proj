@@ -575,6 +575,25 @@ body{
         
         }
 
+        header{
+            height: 40vh;
+        }
+
+        header h1{
+            font-size: 28px;
+        }
+
+        header h2{
+            padding-bottom: 5%;
+            font-size: 24px;
+
+        }
+
+        header a{
+            width: 20%;
+            height: fit-content;
+        }
+
         .features > article:last-child{
             flex-direction: row;
             flex-wrap: wrap;
