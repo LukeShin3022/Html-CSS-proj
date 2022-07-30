@@ -1,0 +1,42 @@
+@mixin flexbox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+    align-items: unset;
+
+}
+
+@mixin flexbox-2 (
+    $direction,
+    $justify,
+    $align,
+    $rowGap,
+    $columnGap,
+    $wrap
+){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    row-gap: $rowGap;
+    column-gap: $columnGap;
+    flex-wrap: $wrap;
+}
+   
+@mixin flexbox-3 ( 
+    $direction : column,
+    $justify: left,
+    $align: flex-start,
+    $rowGap: 0px,
+    $columnGap: 0px,
+    $wrap: nowrap
+){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    row-gap: $rowGap;
+    column-gap: $columnGap;
+    flex-wrap: $wrap;
+}
+   

@@ -671,6 +671,42 @@ body{
 
     }
 
+    @media(min-width: 1000px){
+
+        nav{
+            height: 7vh;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav h2{
+            width: 30%;
+        }
+        
+        nav > ul{
+            height: 100%;
+            width: 40%;
+        }
+
+        .features section,
+        .team figure,
+        .portfolio figure{
+            width: 20%;
+        }
+
+        
+        main > section{
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+        
+        /* CONTACT */
+
+    }
+    
 }
 
 
