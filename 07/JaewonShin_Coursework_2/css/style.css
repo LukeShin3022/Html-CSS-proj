@@ -122,48 +122,51 @@ main img {
     color: gray;
     text-align: center;
   }
+  p, small {
+    line-height: 2;
+  }
   .about > section {
     display: flex;
     flex-direction: column;
     row-gap: 50px;
   }
-  .about > section figure {
+  .about figure {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
   }
-  .about > section figcaption {
+  .about figcaption {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
   }
-  .about > section h3 {
+  .about h3 {
     text-transform: capitalize;
     color: darkturquoise;
     font-weight: 300;
     font-size: 24px;
   }
-  .about > section small {
+  .about small {
     color: deeppink;
     font-size: 14px;
   }
-  .about > section p {
+  .about p {
     color: gray;
     font-size: 14px;
   }
-  .about > section aside {
+  .about aside {
     display: flex;
     -moz-column-gap: 15px;
          column-gap: 15px;
     padding: 3%;
   }
-  .about > section a {
+  .about a {
     color: gray;
     font-size: 16px;
     text-decoration: none;
     padding: 2%;
   }
-  .about > section a:hover {
+  .about a:hover {
     background-color: hotpink;
     color: white;
   }
@@ -218,6 +221,9 @@ main img {
     width: 100%;
     background-color: rgba(65, 105, 225, 0.8);
   }
+  .f-top .btn-01 input:hover {
+    background-color: lightgray;
+  }
   .f-top .btn-02 {
     background-color: rgba(80, 80, 80, 0.8);
   }
@@ -225,12 +231,18 @@ main img {
     width: 100%;
     background-color: rgba(0, 128, 0, 0.8);
   }
+  .f-top .btn-02 input:hover {
+    background-color: lightgray;
+  }
   .f-top .btn-03 {
     background-color: rgba(80, 80, 80, 0.8);
   }
   .f-top .btn-03 input {
     width: 100%;
     background-color: rgba(178, 34, 34, 0.8);
+  }
+  .f-top .btn-03 input:hover {
+    background-color: lightgray;
   }
   .f-bottom {
     display: flex;
@@ -291,6 +303,9 @@ main img {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+  }
+  .m-top figure img {
+    height: 35vh;
   }
   .m-top figcaption {
     display: flex;
@@ -425,5 +440,232 @@ main img {
   }
   .faq .accordion {
     --bs-accordion-btn-icon-transform: rotate(90deg) !important;
+  }
+}
+@media (min-width: 700px) {
+  header {
+    height: 50vh;
+  }
+  header > section {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  header > section > article {
+    width: 50%;
+    height: 60%;
+  }
+  details {
+    display: none;
+  }
+  nav {
+    padding-right: 3%;
+    width: 100%;
+  }
+  nav > ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav li {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+  }
+  nav a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 85%;
+    padding: 10%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 0px none transparent;
+  }
+  nav a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+  }
+  .about > section figure {
+    flex-direction: row;
+  }
+  .about > section figcaption {
+    padding-left: 2%;
+  }
+  .about > section aside {
+    padding: 0;
+  }
+  .about img {
+    width: 20%;
+  }
+  .features > section > aside {
+    height: 55vh;
+    background-position: right 0% bottom 80%;
+  }
+  .f-bottom {
+    padding-top: 10%;
+    flex-direction: row;
+    align-items: center;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .f-bottom aside:first-child {
+    width: 50%;
+    height: 20vh;
+  }
+  .f-bottom aside:last-child {
+    width: 50%;
+  }
+  .menu aside input {
+    width: 20%;
+  }
+  .m-top {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .m-top figure {
+    width: 30%;
+  }
+  .m-top figure img {
+    height: 15vh;
+  }
+  .m-bottom {
+    flex-direction: row;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .m-bottom > aside:first-child {
+    width: 50%;
+    height: 20vh;
+  }
+  .m-bottom > aside:last-child {
+    width: 50%;
+  }
+  .m-bottom > aside:last-child [type=button] {
+    width: 50%;
+  }
+  .contact > section {
+    flex-direction: row;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  .contact > section form {
+    width: 50%;
+  }
+  .contact > section textarea {
+    height: 10vh;
+  }
+  .c-addr {
+    width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  header {
+    background-position: bottom;
+  }
+  header > section small {
+    font-size: 18px;
+  }
+  nav > ul {
+    width: 50%;
+  }
+  nav a {
+    font-size: 20px;
+  }
+  main > section {
+    padding: 1%;
+  }
+  main .section-title {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  main .section-title p {
+    width: 50%;
+    font-size: 18px;
+  }
+  .about > section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about > section figure {
+    width: 50%;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  .about > section figcaption small, .about > section figcaption p, .about > section figcaption a {
+    font-size: 16px;
+  }
+  .f-top {
+    flex-direction: row;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  .f-top i {
+    font-size: 90px;
+  }
+  .f-top p {
+    width: 70%;
+  }
+  .f-bottom {
+    padding-top: 5%;
+  }
+  .f-bottom aside:first-child {
+    height: 40vh;
+  }
+  .f-bottom p {
+    width: 80%;
+  }
+  .menu > section {
+    row-gap: 10vh;
+  }
+  .menu aside input {
+    font-size: 20px;
+    padding: 1%;
+    width: 15%;
+  }
+  .m-top {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .m-top figure {
+    width: 22%;
+  }
+  .m-top figure img {
+    height: 25vh;
+  }
+  .m-top figcaption span {
+    font-size: 22px;
+  }
+  .m-bottom aside:first-child {
+    height: 40vh;
+  }
+  .m-bottom aside:last-child {
+    width: 40%;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact > section {
+    -moz-column-gap: 10vh;
+         column-gap: 10vh;
+    width: 60%;
+  }
+  .contact > section textarea {
+    height: 20vh;
+  }
+  .faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .faq > section {
+    width: 60%;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,156 @@
+@media (min-width:1000px){
+
+
+    header {
+        background-position: bottom;
+
+        > section {
+            small {
+                font-size: 18px;
+            }
+        }
+    }
+
+    nav{
+        > ul{
+            width: 50%;
+        }
+
+        a{
+            font-size: 20px;
+        }
+    }
+
+    main{
+
+        > section{
+            padding: 1%;
+        }
+
+        .section-title{
+            padding-top: 5%;
+            padding-bottom: 5%;
+
+            p{
+                width: 50%;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .about{
+        > section{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            figure{
+                width: 50%;
+                column-gap: 40px;
+            }
+
+            figcaption{
+                small, p, a{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+   
+    .f-top{
+        flex-direction: row;
+        column-gap: 40px;
+
+        i{
+            font-size: 90px;
+        }
+
+        p{
+            width: 70%;
+        }
+
+    }
+    
+    .f-bottom{
+        padding-top: 5%;
+
+        aside:first-child{
+            height: 40vh;
+        }
+
+        p{
+            width: 80%;
+        }
+    }
+
+    .menu{
+        > section{
+            row-gap: 10vh;
+        }
+
+        aside{
+
+            input{
+                font-size: 20px;
+                padding: 1%;
+                width: 15%;
+            }
+        }
+    }
+
+    .m-top{
+        column-gap: 20px;
+        
+        figure{
+            width: 22%;
+
+            img{
+                height: 25vh;
+            }
+        }
+
+        figcaption{
+
+            span{
+                font-size: 22px;
+            }
+        }
+    }
+
+    .m-bottom{
+        aside:first-child{
+            height: 40vh;
+        }
+
+        aside:last-child{
+                width: 40%;
+        }
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > section{
+            column-gap: 10vh;
+            width: 60%;
+
+            textarea{
+                height: 20vh;
+            }
+        }
+
+    }
+
+    .faq{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > section{
+            width: 60%;
+        }
+    }
+
+}
