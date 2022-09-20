@@ -1,3 +1,2 @@
-# Tamwood_Co-op
-Tamwood 코업 관련
-Hello world
+# Html-CSS-proj
+Study about Html and CSS in Tamwood Co-op
