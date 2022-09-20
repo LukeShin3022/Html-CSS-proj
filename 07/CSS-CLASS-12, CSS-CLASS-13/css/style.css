@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10vh;
+}
+main > section {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+main h2 {
+  font-size: 26px;
+  text-transform: capitalize;
+  color: dimgray;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 300px) {
+  header > section:first-child > article {
+    background-color: white;
+  }
+  header > section:last-child {
+    position: relative;
+    height: 50vh;
+  }
+  header video {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    z-index: 1;
+  }
+  header div {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(80, 80, 80, 0.5);
+  }
+  header article {
+    background-color: rgba(50, 50, 50, 0.7);
+    opacity: 0.9;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  header > p {
+    width: 70%;
+  }
+  header h2 {
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 40px;
+  }
+  .features {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+  }
+  .features > article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+  .features aside {
+    display: flex;
+    -moz-column-gap: 5vh;
+         column-gap: 5vh;
+    align-items: center;
+    color: dimgray;
+    padding-bottom: 10%;
+  }
+  .features aside > p {
+    font-size: 30px;
+  }
+  .features i {
+    font-size: 60px;
+  }
+  .activities {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vh;
+  }
+  .activities > article {
+    height: 30vh;
+    background-image: url("../../img/activities.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .activities > article aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 80, 80, 0.5);
+  }
+  .activities > article h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+  }
+  .activities > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5vh;
+  }
+  .activities > section aside {
+    width: 20vh;
+    padding-bottom: 25vh;
+  }
+  .activities > section figure {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2vh;
+    border: 1px solid gray;
+  }
+  .activities > section figure:nth-child(1) > aside {
+    background-image: url("../img/1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .activities > section figure:nth-child(2) > aside {
+    background-image: url("../img/2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .activities > section figure:nth-child(3) > aside {
+    background-image: url("../img/3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .activities > section figure:nth-child(4) > aside {
+    background-image: url("../img/4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .activities > section a {
+    color: deepskyblue;
+  }
+  .activities > section h3 {
+    font-weight: 400;
+  }
+  .activities > section figcaption {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    width: 70%;
+  }
+  .company {
+    padding: 0;
+    padding-top: 15%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vh;
+  }
+  .company > article:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .company > article:first-child > section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+    line-height: 2;
+    width: 70%;
+  }
+  .company aside {
+    background-image: url("/img/tablet.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+  }
+  .company div {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+  }
+  .company div > a {
+    color: gray;
+    padding: 2%;
+    width: 40%;
+    text-align: center;
+    border: qps solid darkgray;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  .company div > a:hover {
+    background-color: darkgray;
+    color: white;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .contact > article:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 5vh;
+  }
+  .contact > article:last-child aside {
+    width: 100%;
+    height: 30vh;
+    background-image: url("/img/map.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .contact form {
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    align-items: flex-end;
+    padding-left: 2%;
+  }
+  .contact form input,
+.contact form textarea {
+    font-size: 18px;
+    border: 1px solid lightgray;
+    width: 100%;
+    padding: 2%;
+  }
+  .contact form textarea {
+    height: 25vh;
+    resize: none;
+  }
+  .contact form [value="Send It"] {
+    background-color: white;
+    color: gray;
+    width: 40%;
+    text-transform: capitalize;
+    padding: 5%;
+    transition: 0.4s;
+  }
+  .contact form [value="Send It"]:hover {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -7,6 +7,12 @@
         background-repeat: no-repeat;
     }
 
+    %bg-pic{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     header{
         height: 90vh;
         @extend %bg-pic;
@@ -41,7 +47,6 @@
             font-weight: 400;
             font-size: 26px;
             text-transform: uppercase;
-            
         }
 
         span{

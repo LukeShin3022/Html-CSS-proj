@@ -1,0 +1,75 @@
+@media (min-width: 700px){
+   
+    nav{
+        background-color: $db_Color;
+        padding: 1%;
+
+        ul{
+            width: 90%;
+            display: flex;
+            flex-direction: row-reverse;
+            column-gap: 20px;
+        }
+
+        li{
+            display: flex;
+        }
+
+        a{
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+    }
+
+    main{
+        > section{
+            h1{
+                font-size: 40px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .background{
+
+        h1{
+            font-size: 50px;
+            font-weight: 300;
+        }
+
+        p{
+            font-weight: 100;
+        }
+    }
+    
+    #typography{
+        padding-top: 2%;
+        padding-bottom: 2%;
+
+        h2, h3, h4{
+            width: 100%;
+            text-align: left;
+            font-size: 26px;
+        }
+    }
+
+    #button{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    #lists{
+        padding-top: 2%;
+        padding-bottom: 2%;
+
+        > div{
+            flex-wrap: wrap;
+        }
+    }
+
+    #tables{
+        display: flex;
+
+    }
+}

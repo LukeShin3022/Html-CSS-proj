@@ -1,0 +1,271 @@
+@media(min-width : 300px){
+
+    header{
+
+        > section:first-child{
+            > article{
+                background-color: white;
+            }
+        }
+
+        > section:last-child{
+            position: relative;
+           height: 50vh;
+        }
+
+        video{
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            z-index: 1;
+
+        }
+
+        div{
+            border: 1px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 2;
+            background-color: rgba(80,80,80,.5);
+        }
+
+        article{
+            background-color: rgba(50,50,50,.7);
+             opacity: .9;
+             width: 100%;
+             color: white;
+             @include flexColumn;
+             row-gap: 1vh;
+             align-items: center;
+             text-align: center;
+             padding-top: 5%;
+             padding-bottom: 5%;
+        }
+
+        > p{
+            width: 70%
+        }
+
+        h2{
+        text-transform: capitalize;
+        font-weight: 300;
+        font-size: 40px;
+        }
+
+
+    }
+
+    .features{
+        @include flexColumn;
+        row-gap: 5vh;
+
+        > article{
+            @include flexColumn;
+            row-gap: 2vh;
+        }
+
+        aside{
+            display: flex;
+            column-gap: 5vh;
+            align-items: center;
+            color: dimgray;
+            padding-bottom: 10%;
+
+            > p{
+                font-size: 30px;
+            }
+        }
+
+        i{
+            font-size: 60px;
+        }
+    }
+
+    .activities{
+        @include flexColumn;
+        row-gap: 10vh;
+
+        > article{
+            height: 30vh;
+            background-image: url('../../img/activities.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            aside{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(80,80,80,.5);
+            }
+
+            h2{
+                color: white;
+                font-weight: 400;
+                font-size: 30px;
+            }
+        }
+
+        > section{
+            @include flexColumn;
+            align-items: center;
+            row-gap: 5vh;
+
+            aside{
+                width: 20vh;
+                padding-bottom: 25vh
+            }
+
+            figure{
+                padding-top: 10%;
+                padding-bottom: 10%;
+                @include flexColumn;
+                align-items: center;
+                row-gap: 2vh;
+                border: 1px solid gray;
+
+                &:nth-child(1) > aside{
+                    @include bgPicture("../img/1.jpg");
+                }
+
+                &:nth-child(2) > aside{
+                    @include bgPicture("../img/2.jpg");
+                }
+
+                &:nth-child(3) > aside{
+                    @include bgPicture("../img/3.jpg");
+                }
+
+                &:nth-child(4) > aside{
+                    @include bgPicture("../img/4.jpg");
+                }
+            }
+
+            a{
+                color: deepskyblue;
+            }
+
+            h3{
+                font-weight: 400;
+            }
+
+            figcaption{
+                @include flexColumn;
+                row-gap: 2vh;
+                width: 70%;
+            }
+        }
+    }
+
+    .company{
+        padding: 0;
+        padding-top: 15%;
+        @include flexColumn;
+        row-gap: 10vh;
+
+        > article:first-child{
+            @include flexColumn;
+            align-items: center;
+
+            > section{
+                @include flexColumn;
+                row-gap: 5vh;
+                line-height: 2;
+                width: 70%;
+            }
+        }
+
+        aside{
+            @include bgPicture("/img/tablet.jpg");
+            width: 100%;
+            height: 50vh;
+        }
+
+        div {
+            width: 100%;
+            display: flex;
+            justify-content: right;
+
+            > a{
+                color: gray;
+                padding: 2%;
+                width: 40%;
+                text-align: center;
+                border: qps solid darkgray;
+                transition: .4s;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: darkgray;
+                    color: white;
+                }
+            }
+        }
+
+
+        
+    }
+
+    .contact{
+        @include flexColumn;
+        row-gap: 5vh;
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+        > article:first-child{
+            @include flexColumn;
+            align-items: flex-end;
+            row-gap: 5vh;
+        }
+
+        > article:last-child{
+            aside{
+                width: 100%;
+                height: 30vh;
+                @include bgPicture("/img/map.jpg");
+            }
+        }
+
+        form{
+            width: 96%;
+            @include flexColumn;
+            row-gap: 2vh;
+            align-items: flex-end;
+            padding-left: 2%;
+
+            input,
+            textarea{
+                font-size: 18px;
+                border: 1px solid lightgray;
+                width: 100%;
+                padding: 2%;
+            }
+
+            textarea{
+                height: 25vh;
+                resize: none;
+            }
+
+            [value="Send It"]{
+                background-color: white;
+                color: gray;
+                width: 40%;
+                text-transform: capitalize;
+                padding: 5%;
+                transition: .4s;
+
+                &:hover{
+                    background-color: gray;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
